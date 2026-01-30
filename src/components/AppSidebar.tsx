@@ -1,8 +1,9 @@
 import { useTranslation } from 'react-i18next';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useParams } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import { LanguageSelector } from './LanguageSelector';
 import { ThemeToggle } from './ThemeToggle';
+import { Logo } from './Logo';
 import {
   Search,
   Code2,
@@ -20,8 +21,9 @@ import {
 } from 'lucide-react';
 import { useState } from 'react';
 import { Button } from './ui/button';
+import { toolRoutes, type ToolId, type LanguageCode } from '@/config/routes';
 
-const toolIcons: Record<string, React.ElementType> = {
+const toolIcons: Record<ToolId, React.ElementType> = {
   'serp-simulator': Search,
   'schema-generator': Code2,
   'robots-generator': FileText,
@@ -34,7 +36,7 @@ const toolIcons: Record<string, React.ElementType> = {
   'utm-generator': Target,
 };
 
-const tools = [
+const tools: { id: ToolId; nameKey: string }[] = [
   { id: 'serp-simulator', nameKey: 'tools.serpSimulator.name' },
   { id: 'schema-generator', nameKey: 'tools.schemaGenerator.name' },
   { id: 'robots-generator', nameKey: 'tools.robotsGenerator.name' },
@@ -48,9 +50,29 @@ const tools = [
 ];
 
 export function AppSidebar() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const location = useLocation();
+  const { lang } = useParams<{ lang: string }>();
   const [isOpen, setIsOpen] = useState(false);
+  
+  const currentLang = (lang || i18n.language || 'en') as LanguageCode;
+
+  const getToolPath = (toolId: ToolId) => `/${currentLang}/${toolRoutes[toolId][currentLang]}`;
+  const getHomePath = () => `/${currentLang}`;
+
+  const isToolActive = (toolId: ToolId) => {
+    const pathParts = location.pathname.split('/').filter(Boolean);
+    if (pathParts.length >= 2) {
+      const currentSlug = pathParts[1];
+      return (Object.values(toolRoutes[toolId]) as string[]).includes(currentSlug);
+    }
+    return false;
+  };
+
+  const isHomeActive = () => {
+    const pathParts = location.pathname.split('/').filter(Boolean);
+    return pathParts.length <= 1;
+  };
 
   return (
     <>
@@ -83,32 +105,22 @@ export function AppSidebar() {
           {/* Header */}
           <div className="p-4 border-b border-sidebar-border">
             <Link
-              to="/"
-              className="flex items-center gap-2"
+              to={getHomePath()}
+              className="block"
               onClick={() => setIsOpen(false)}
             >
-              <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-                <Search className="h-4 w-4 text-primary-foreground" />
-              </div>
-              <div>
-                <h1 className="font-bold text-lg text-sidebar-foreground">
-                  {t('common.appName')}
-                </h1>
-                <p className="text-xs text-muted-foreground">
-                  {t('common.tagline')}
-                </p>
-              </div>
+              <Logo size="md" />
             </Link>
           </div>
 
           {/* Navigation */}
           <nav className="flex-1 overflow-y-auto p-4">
             <Link
-              to="/"
+              to={getHomePath()}
               onClick={() => setIsOpen(false)}
               className={cn(
                 'flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors mb-2',
-                location.pathname === '/'
+                isHomeActive()
                   ? 'bg-sidebar-accent text-sidebar-accent-foreground'
                   : 'text-sidebar-foreground hover:bg-sidebar-accent/50'
               )}
@@ -126,11 +138,11 @@ export function AppSidebar() {
             <div className="space-y-1">
               {tools.map((tool) => {
                 const Icon = toolIcons[tool.id];
-                const isActive = location.pathname === `/tools/${tool.id}`;
+                const isActive = isToolActive(tool.id);
                 return (
                   <Link
                     key={tool.id}
-                    to={`/tools/${tool.id}`}
+                    to={getToolPath(tool.id)}
                     onClick={() => setIsOpen(false)}
                     className={cn(
                       'flex items-center gap-3 px-3 py-2 rounded-lg text-sm transition-colors',

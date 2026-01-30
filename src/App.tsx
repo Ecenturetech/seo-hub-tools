@@ -2,8 +2,9 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { MainLayout } from "@/components/MainLayout";
+import { LanguageProvider } from "@/components/LanguageProvider";
 import "@/i18n";
 
 // Pages
@@ -22,7 +23,36 @@ import HreflangGenerator from "./pages/tools/HreflangGenerator";
 import LinkValidator from "./pages/tools/LinkValidator";
 import UtmGenerator from "./pages/tools/UtmGenerator";
 
+// Route config
+import { toolRoutes } from "@/config/routes";
+
 const queryClient = new QueryClient();
+
+// Helper to get default language
+const getDefaultLang = () => {
+  const saved = localStorage.getItem('language');
+  if (saved && ['en', 'pt', 'es', 'fr'].includes(saved)) {
+    return saved;
+  }
+  const browserLang = navigator.language.split('-')[0];
+  if (['en', 'pt', 'es', 'fr'].includes(browserLang)) {
+    return browserLang;
+  }
+  return 'en';
+};
+
+const toolComponents: Record<string, React.ComponentType> = {
+  'serp-simulator': SerpSimulator,
+  'schema-generator': SchemaGenerator,
+  'robots-generator': RobotsGenerator,
+  'word-counter': WordCounter,
+  'meta-analyzer': MetaAnalyzer,
+  'sitemap-generator': SitemapGenerator,
+  'webp-converter': WebpConverter,
+  'hreflang-generator': HreflangGenerator,
+  'link-validator': LinkValidator,
+  'utm-generator': UtmGenerator,
+};
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -30,25 +60,47 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <MainLayout>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/tools/serp-simulator" element={<SerpSimulator />} />
-            <Route path="/tools/schema-generator" element={<SchemaGenerator />} />
-            <Route path="/tools/robots-generator" element={<RobotsGenerator />} />
-            <Route path="/tools/word-counter" element={<WordCounter />} />
-            <Route path="/tools/meta-analyzer" element={<MetaAnalyzer />} />
-            <Route path="/tools/sitemap-generator" element={<SitemapGenerator />} />
-            <Route path="/tools/webp-converter" element={<WebpConverter />} />
-            <Route path="/tools/hreflang-generator" element={<HreflangGenerator />} />
-            <Route path="/tools/link-validator" element={<LinkValidator />} />
-            <Route path="/tools/utm-generator" element={<UtmGenerator />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </MainLayout>
+        <Routes>
+          {/* Redirect root to default language */}
+          <Route path="/" element={<Navigate to={`/${getDefaultLang()}`} replace />} />
+          
+          {/* Language routes */}
+          {['en', 'pt', 'es', 'fr'].map((lang) => (
+            <Route key={lang} path={`/${lang}`} element={<LanguageProvider lang={lang}><MainLayout><Index /></MainLayout></LanguageProvider>} />
+          ))}
+
+          {/* Tool routes for each language */}
+          {Object.entries(toolRoutes).map(([toolId, slugs]) => {
+            const ToolComponent = toolComponents[toolId];
+            return Object.entries(slugs).map(([lang, slug]) => (
+              <Route
+                key={`${lang}-${toolId}`}
+                path={`/${lang}/${slug}`}
+                element={
+                  <LanguageProvider lang={lang}>
+                    <MainLayout>
+                      <ToolComponent />
+                    </MainLayout>
+                  </LanguageProvider>
+                }
+              />
+            ));
+          })}
+
+          {/* Legacy routes redirect to localized versions */}
+          <Route path="/tools/:toolSlug" element={<LegacyToolRedirect />} />
+          
+          <Route path="*" element={<NotFound />} />
+        </Routes>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );
+
+// Component to handle legacy /tools/* redirects
+function LegacyToolRedirect() {
+  const defaultLang = getDefaultLang();
+  return <Navigate to={`/${defaultLang}`} replace />;
+}
 
 export default App;

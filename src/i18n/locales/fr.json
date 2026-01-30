@@ -1,7 +1,8 @@
 {
   "common": {
-    "appName": "SEO Toolbox",
-    "tagline": "Outils SEO Professionnels",
+    "appName": "SeoLayer Studio",
+    "tagline": "Outils SEO simples, rapides et locaux",
+    "slogan": "Outils SEO simples, rapides et local-first pour les développeurs et créateurs.",
     "home": "Accueil",
     "tools": "Outils",
     "copy": "Copier",
