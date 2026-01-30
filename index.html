@@ -30,12 +30,20 @@
       gtag('js', new Date());
       gtag('config', 'G-7BEWRZF6H8');
       
-      // Load GA4 after page load to not block LCP
+      // Load GA4 and AdSense after page load to not block LCP
       window.addEventListener('load', function() {
-        var script = document.createElement('script');
-        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-7BEWRZF6H8';
-        script.async = true;
-        document.head.appendChild(script);
+        // GA4
+        var gaScript = document.createElement('script');
+        gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-7BEWRZF6H8';
+        gaScript.async = true;
+        document.head.appendChild(gaScript);
+        
+        // AdSense
+        var adsScript = document.createElement('script');
+        adsScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8108879940945720';
+        adsScript.async = true;
+        adsScript.crossOrigin = 'anonymous';
+        document.head.appendChild(adsScript);
       });
     </script>
   </head>
