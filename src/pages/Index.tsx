@@ -53,7 +53,7 @@ export default function Index() {
             <span>10 {t('common.tools')} • 4 Languages</span>
           </div>
 
-          <h1 className="text-4xl lg:text-6xl font-bold mb-6 animate-slide-up">
+          <h1 className="text-4xl lg:text-6xl font-bold mb-6 animate-slide-up-lcp">
             <span className="gradient-text">{t('hero.title')}</span>
           </h1>
 
