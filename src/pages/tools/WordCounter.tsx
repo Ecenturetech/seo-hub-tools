@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { BarChart3 } from 'lucide-react';
 import { ToolLayout } from '@/components/ToolLayout';
+import { SEO } from '@/components/SEO';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Card } from '@/components/ui/card';
@@ -57,11 +58,16 @@ export default function WordCounter() {
   }, [text]);
 
   return (
-    <ToolLayout
-      title={t('tools.wordCounter.name')}
-      description={t('tools.wordCounter.description')}
-      icon={BarChart3}
-    >
+    <>
+      <SEO
+        titleKey="tools.wordCounter.metaTitle"
+        descriptionKey="tools.wordCounter.metaDescription"
+      />
+      <ToolLayout
+        title={t('tools.wordCounter.name')}
+        description={t('tools.wordCounter.description')}
+        icon={BarChart3}
+      >
       <div className="grid gap-6 lg:grid-cols-2">
         <div>
           <Label htmlFor="text" className="mb-2 block">{t('common.analyze')}</Label>
@@ -128,6 +134,7 @@ export default function WordCounter() {
           </div>
         </div>
       </div>
-    </ToolLayout>
+      </ToolLayout>
+    </>
   );
 }

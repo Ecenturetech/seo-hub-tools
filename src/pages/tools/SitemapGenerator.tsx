@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Map, Copy, Check, Download } from 'lucide-react';
 import { ToolLayout } from '@/components/ToolLayout';
+import { SEO } from '@/components/SEO';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
@@ -66,11 +67,16 @@ ${urlEntries}
   };
 
   return (
-    <ToolLayout
-      title={t('tools.sitemapGenerator.name')}
-      description={t('tools.sitemapGenerator.description')}
-      icon={Map}
-    >
+    <>
+      <SEO
+        titleKey="tools.sitemapGenerator.metaTitle"
+        descriptionKey="tools.sitemapGenerator.metaDescription"
+      />
+      <ToolLayout
+        title={t('tools.sitemapGenerator.name')}
+        description={t('tools.sitemapGenerator.description')}
+        icon={Map}
+      >
       <div className="grid gap-6 lg:grid-cols-2">
         <div className="space-y-4">
           <div>
@@ -143,6 +149,7 @@ ${urlEntries}
           </Card>
         </div>
       </div>
-    </ToolLayout>
+      </ToolLayout>
+    </>
   );
 }

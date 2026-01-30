@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FileText, Download, Copy, Check } from 'lucide-react';
 import { ToolLayout } from '@/components/ToolLayout';
+import { SEO } from '@/components/SEO';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
@@ -68,11 +69,16 @@ export default function RobotsGenerator() {
   };
 
   return (
-    <ToolLayout
-      title={t('tools.robotsGenerator.name')}
-      description={t('tools.robotsGenerator.description')}
-      icon={FileText}
-    >
+    <>
+      <SEO
+        titleKey="tools.robotsGenerator.metaTitle"
+        descriptionKey="tools.robotsGenerator.metaDescription"
+      />
+      <ToolLayout
+        title={t('tools.robotsGenerator.name')}
+        description={t('tools.robotsGenerator.description')}
+        icon={FileText}
+      >
       <div className="grid gap-6 lg:grid-cols-2">
         <div className="space-y-6">
           <div>
@@ -188,6 +194,7 @@ export default function RobotsGenerator() {
           </Card>
         </div>
       </div>
-    </ToolLayout>
+      </ToolLayout>
+    </>
   );
 }

@@ -2,11 +2,11 @@ import { useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link2, ExternalLink, ArrowUpRight } from 'lucide-react';
 import { ToolLayout } from '@/components/ToolLayout';
+import { SEO } from '@/components/SEO';
 import { Textarea } from '@/components/ui/textarea';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Card } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
 import { cn } from '@/lib/utils';
 
 interface ParsedLink {
@@ -42,11 +42,16 @@ export default function LinkValidator() {
   const externalLinks = links.filter((l) => !l.isInternal);
 
   return (
-    <ToolLayout
-      title={t('tools.linkValidator.name')}
-      description={t('tools.linkValidator.description')}
-      icon={Link2}
-    >
+    <>
+      <SEO
+        titleKey="tools.linkValidator.metaTitle"
+        descriptionKey="tools.linkValidator.metaDescription"
+      />
+      <ToolLayout
+        title={t('tools.linkValidator.name')}
+        description={t('tools.linkValidator.description')}
+        icon={Link2}
+      >
       <div className="grid gap-6 lg:grid-cols-2">
         <div className="space-y-4">
           <div>
@@ -132,6 +137,7 @@ export default function LinkValidator() {
           </div>
         </div>
       </div>
-    </ToolLayout>
+      </ToolLayout>
+    </>
   );
 }
