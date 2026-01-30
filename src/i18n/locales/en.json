@@ -1,0 +1,152 @@
+{
+  "common": {
+    "appName": "SEO Toolbox",
+    "tagline": "Professional SEO Tools",
+    "home": "Home",
+    "tools": "Tools",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "download": "Download",
+    "generate": "Generate",
+    "analyze": "Analyze",
+    "clear": "Clear",
+    "result": "Result",
+    "preview": "Preview",
+    "characters": "characters",
+    "words": "words",
+    "backToHome": "Back to Home",
+    "adPlaceholder": "Advertisement Space"
+  },
+  "hero": {
+    "title": "Your Complete SEO Toolkit",
+    "subtitle": "10 powerful client-side tools to optimize your website's search engine performance. Fast, free, and privacy-focused.",
+    "cta": "Explore Tools"
+  },
+  "tools": {
+    "serpSimulator": {
+      "name": "SERP Simulator",
+      "description": "Preview how your page will appear in Google search results",
+      "title": "Page Title",
+      "titlePlaceholder": "Enter your page title here...",
+      "metaDescription": "Meta Description",
+      "metaPlaceholder": "Enter your meta description here...",
+      "url": "Display URL",
+      "urlPlaceholder": "https://example.com/page",
+      "titleLimit": "Recommended: 50-60 characters",
+      "descLimit": "Recommended: 150-160 characters"
+    },
+    "schemaGenerator": {
+      "name": "Schema JSON-LD Generator",
+      "description": "Generate structured data for rich snippets",
+      "type": "Schema Type",
+      "localBusiness": "Local Business",
+      "article": "Article",
+      "businessName": "Business Name",
+      "businessAddress": "Address",
+      "businessPhone": "Phone",
+      "businessUrl": "Website URL",
+      "articleTitle": "Article Title",
+      "articleAuthor": "Author",
+      "articleDate": "Publish Date",
+      "articleImage": "Image URL"
+    },
+    "robotsGenerator": {
+      "name": "Robots.txt Generator",
+      "description": "Create custom robots.txt rules for crawlers",
+      "userAgent": "User Agent",
+      "allBots": "All Bots",
+      "googlebot": "Googlebot",
+      "bingbot": "Bingbot",
+      "rules": "Rules",
+      "allowAll": "Allow all pages",
+      "disallowAdmin": "Block /admin/",
+      "disallowPrivate": "Block /private/",
+      "disallowApi": "Block /api/",
+      "sitemapUrl": "Sitemap URL",
+      "crawlDelay": "Crawl Delay (seconds)"
+    },
+    "wordCounter": {
+      "name": "Word Counter & Density",
+      "description": "Analyze word frequency and keyword density",
+      "placeholder": "Paste your text here to analyze word count and keyword density...",
+      "totalWords": "Total Words",
+      "uniqueWords": "Unique Words",
+      "avgWordLength": "Avg. Word Length",
+      "topKeywords": "Top Keywords",
+      "keyword": "Keyword",
+      "count": "Count",
+      "density": "Density"
+    },
+    "metaAnalyzer": {
+      "name": "Meta Tags Analyzer",
+      "description": "Extract and analyze meta tags from any URL",
+      "urlPlaceholder": "Enter URL to analyze...",
+      "analyzing": "Analyzing...",
+      "title": "Title",
+      "description": "Description",
+      "h1Tags": "H1 Tags",
+      "ogTags": "Open Graph Tags",
+      "note": "Note: This tool simulates meta tag extraction. For actual URL analysis, a backend service would be required."
+    },
+    "sitemapGenerator": {
+      "name": "Sitemap XML Generator",
+      "description": "Convert a list of URLs into valid XML sitemap",
+      "urlsPlaceholder": "Enter URLs (one per line):\nhttps://example.com/\nhttps://example.com/about\nhttps://example.com/contact",
+      "changeFreq": "Change Frequency",
+      "priority": "Priority",
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "monthly": "Monthly"
+    },
+    "webpConverter": {
+      "name": "Image to WebP Converter",
+      "description": "Convert images to WebP format for better performance",
+      "dropzone": "Drop an image here or click to upload",
+      "formats": "Supports: JPG, PNG, GIF",
+      "quality": "Quality",
+      "originalSize": "Original Size",
+      "convertedSize": "WebP Size",
+      "savings": "Savings"
+    },
+    "hreflangGenerator": {
+      "name": "Hreflang Tags Generator",
+      "description": "Generate hreflang tags for multilingual sites",
+      "baseUrl": "Base URL",
+      "languages": "Languages",
+      "addLanguage": "Add Language",
+      "languageCode": "Language Code",
+      "url": "URL",
+      "xDefault": "x-default (fallback)"
+    },
+    "linkValidator": {
+      "name": "Link Validator",
+      "description": "Identify internal vs external links in HTML",
+      "htmlPlaceholder": "Paste your HTML code here...",
+      "domain": "Your Domain",
+      "domainPlaceholder": "example.com",
+      "internalLinks": "Internal Links",
+      "externalLinks": "External Links",
+      "totalLinks": "Total Links Found"
+    },
+    "utmGenerator": {
+      "name": "UTM Link Generator",
+      "description": "Create tracking URLs for marketing campaigns",
+      "baseUrl": "Website URL",
+      "urlPlaceholder": "https://example.com/landing-page",
+      "source": "Campaign Source",
+      "sourcePlaceholder": "google, newsletter, facebook",
+      "medium": "Campaign Medium",
+      "mediumPlaceholder": "cpc, email, social",
+      "campaign": "Campaign Name",
+      "campaignPlaceholder": "spring_sale",
+      "term": "Campaign Term (optional)",
+      "termPlaceholder": "running+shoes",
+      "content": "Campaign Content (optional)",
+      "contentPlaceholder": "logolink, textlink"
+    }
+  },
+  "footer": {
+    "madeWith": "Made with",
+    "for": "for SEO professionals"
+  }
+}

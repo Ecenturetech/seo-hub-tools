@@ -1,0 +1,152 @@
+{
+  "common": {
+    "appName": "SEO Toolbox",
+    "tagline": "Herramientas Profesionales de SEO",
+    "home": "Inicio",
+    "tools": "Herramientas",
+    "copy": "Copiar",
+    "copied": "¡Copiado!",
+    "download": "Descargar",
+    "generate": "Generar",
+    "analyze": "Analizar",
+    "clear": "Limpiar",
+    "result": "Resultado",
+    "preview": "Vista previa",
+    "characters": "caracteres",
+    "words": "palabras",
+    "backToHome": "Volver al Inicio",
+    "adPlaceholder": "Espacio para Anuncio"
+  },
+  "hero": {
+    "title": "Tu Kit Completo de SEO",
+    "subtitle": "10 potentes herramientas client-side para optimizar el rendimiento de tu sitio web en los motores de búsqueda. Rápido, gratuito y enfocado en la privacidad.",
+    "cta": "Explorar Herramientas"
+  },
+  "tools": {
+    "serpSimulator": {
+      "name": "Simulador de SERP",
+      "description": "Visualiza cómo aparecerá tu página en los resultados de Google",
+      "title": "Título de la Página",
+      "titlePlaceholder": "Ingresa el título de tu página aquí...",
+      "metaDescription": "Meta Descripción",
+      "metaPlaceholder": "Ingresa tu meta descripción aquí...",
+      "url": "URL de Visualización",
+      "urlPlaceholder": "https://ejemplo.com/pagina",
+      "titleLimit": "Recomendado: 50-60 caracteres",
+      "descLimit": "Recomendado: 150-160 caracteres"
+    },
+    "schemaGenerator": {
+      "name": "Generador de Schema JSON-LD",
+      "description": "Genera datos estructurados para fragmentos enriquecidos",
+      "type": "Tipo de Schema",
+      "localBusiness": "Negocio Local",
+      "article": "Artículo",
+      "businessName": "Nombre del Negocio",
+      "businessAddress": "Dirección",
+      "businessPhone": "Teléfono",
+      "businessUrl": "URL del Sitio",
+      "articleTitle": "Título del Artículo",
+      "articleAuthor": "Autor",
+      "articleDate": "Fecha de Publicación",
+      "articleImage": "URL de la Imagen"
+    },
+    "robotsGenerator": {
+      "name": "Generador de Robots.txt",
+      "description": "Crea reglas personalizadas de robots.txt para rastreadores",
+      "userAgent": "User Agent",
+      "allBots": "Todos los Bots",
+      "googlebot": "Googlebot",
+      "bingbot": "Bingbot",
+      "rules": "Reglas",
+      "allowAll": "Permitir todas las páginas",
+      "disallowAdmin": "Bloquear /admin/",
+      "disallowPrivate": "Bloquear /private/",
+      "disallowApi": "Bloquear /api/",
+      "sitemapUrl": "URL del Sitemap",
+      "crawlDelay": "Retraso de Rastreo (segundos)"
+    },
+    "wordCounter": {
+      "name": "Contador de Palabras y Densidad",
+      "description": "Analiza la frecuencia de palabras y densidad de keywords",
+      "placeholder": "Pega tu texto aquí para analizar el conteo de palabras y densidad de keywords...",
+      "totalWords": "Total de Palabras",
+      "uniqueWords": "Palabras Únicas",
+      "avgWordLength": "Longitud Promedio",
+      "topKeywords": "Principales Keywords",
+      "keyword": "Keyword",
+      "count": "Conteo",
+      "density": "Densidad"
+    },
+    "metaAnalyzer": {
+      "name": "Analizador de Meta Tags",
+      "description": "Extrae y analiza meta tags de cualquier URL",
+      "urlPlaceholder": "Ingresa la URL para analizar...",
+      "analyzing": "Analizando...",
+      "title": "Título",
+      "description": "Descripción",
+      "h1Tags": "Tags H1",
+      "ogTags": "Tags Open Graph",
+      "note": "Nota: Esta herramienta simula la extracción de meta tags. Para análisis real de URLs, se requeriría un servicio de backend."
+    },
+    "sitemapGenerator": {
+      "name": "Generador de Sitemap XML",
+      "description": "Convierte una lista de URLs en sitemap XML válido",
+      "urlsPlaceholder": "Ingresa las URLs (una por línea):\nhttps://ejemplo.com/\nhttps://ejemplo.com/acerca\nhttps://ejemplo.com/contacto",
+      "changeFreq": "Frecuencia de Cambio",
+      "priority": "Prioridad",
+      "daily": "Diario",
+      "weekly": "Semanal",
+      "monthly": "Mensual"
+    },
+    "webpConverter": {
+      "name": "Conversor de Imagen a WebP",
+      "description": "Convierte imágenes a WebP para mejor rendimiento",
+      "dropzone": "Arrastra una imagen aquí o haz clic para subir",
+      "formats": "Soporta: JPG, PNG, GIF",
+      "quality": "Calidad",
+      "originalSize": "Tamaño Original",
+      "convertedSize": "Tamaño WebP",
+      "savings": "Ahorro"
+    },
+    "hreflangGenerator": {
+      "name": "Generador de Tags Hreflang",
+      "description": "Genera tags hreflang para sitios multilingües",
+      "baseUrl": "URL Base",
+      "languages": "Idiomas",
+      "addLanguage": "Agregar Idioma",
+      "languageCode": "Código de Idioma",
+      "url": "URL",
+      "xDefault": "x-default (fallback)"
+    },
+    "linkValidator": {
+      "name": "Validador de Enlaces",
+      "description": "Identifica enlaces internos vs externos en HTML",
+      "htmlPlaceholder": "Pega tu código HTML aquí...",
+      "domain": "Tu Dominio",
+      "domainPlaceholder": "ejemplo.com",
+      "internalLinks": "Enlaces Internos",
+      "externalLinks": "Enlaces Externos",
+      "totalLinks": "Total de Enlaces Encontrados"
+    },
+    "utmGenerator": {
+      "name": "Generador de Enlaces UTM",
+      "description": "Crea URLs de seguimiento para campañas de marketing",
+      "baseUrl": "URL del Sitio",
+      "urlPlaceholder": "https://ejemplo.com/landing-page",
+      "source": "Fuente de Campaña",
+      "sourcePlaceholder": "google, newsletter, facebook",
+      "medium": "Medio de Campaña",
+      "mediumPlaceholder": "cpc, email, social",
+      "campaign": "Nombre de Campaña",
+      "campaignPlaceholder": "promocion_verano",
+      "term": "Término de Campaña (opcional)",
+      "termPlaceholder": "zapatillas+running",
+      "content": "Contenido de Campaña (opcional)",
+      "contentPlaceholder": "logolink, textlink"
+    }
+  },
+  "footer": {
+    "madeWith": "Hecho con",
+    "for": "para profesionales de SEO"
+  }
+}
