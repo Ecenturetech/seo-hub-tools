@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { MainLayout } from "@/components/MainLayout";
 import { LanguageProvider } from "@/components/LanguageProvider";
+import { usePageTracking } from "@/hooks/usePageTracking";
 import "@/i18n";
 
 // Pages
@@ -54,44 +55,53 @@ const toolComponents: Record<string, React.ComponentType> = {
   'utm-generator': UtmGenerator,
 };
 
+// Component that tracks page views
+function AppRoutes() {
+  usePageTracking();
+  
+  return (
+    <Routes>
+      {/* Redirect root to default language */}
+      <Route path="/" element={<Navigate to={`/${getDefaultLang()}`} replace />} />
+      
+      {/* Language routes */}
+      {['en', 'pt', 'es', 'fr'].map((lang) => (
+        <Route key={lang} path={`/${lang}`} element={<LanguageProvider lang={lang}><MainLayout><Index /></MainLayout></LanguageProvider>} />
+      ))}
+
+      {/* Tool routes for each language */}
+      {Object.entries(toolRoutes).map(([toolId, slugs]) => {
+        const ToolComponent = toolComponents[toolId];
+        return Object.entries(slugs).map(([lang, slug]) => (
+          <Route
+            key={`${lang}-${toolId}`}
+            path={`/${lang}/${slug}`}
+            element={
+              <LanguageProvider lang={lang}>
+                <MainLayout>
+                  <ToolComponent />
+                </MainLayout>
+              </LanguageProvider>
+            }
+          />
+        ));
+      })}
+
+      {/* Legacy routes redirect to localized versions */}
+      <Route path="/tools/:toolSlug" element={<LegacyToolRedirect />} />
+      
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+  );
+}
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Routes>
-          {/* Redirect root to default language */}
-          <Route path="/" element={<Navigate to={`/${getDefaultLang()}`} replace />} />
-          
-          {/* Language routes */}
-          {['en', 'pt', 'es', 'fr'].map((lang) => (
-            <Route key={lang} path={`/${lang}`} element={<LanguageProvider lang={lang}><MainLayout><Index /></MainLayout></LanguageProvider>} />
-          ))}
-
-          {/* Tool routes for each language */}
-          {Object.entries(toolRoutes).map(([toolId, slugs]) => {
-            const ToolComponent = toolComponents[toolId];
-            return Object.entries(slugs).map(([lang, slug]) => (
-              <Route
-                key={`${lang}-${toolId}`}
-                path={`/${lang}/${slug}`}
-                element={
-                  <LanguageProvider lang={lang}>
-                    <MainLayout>
-                      <ToolComponent />
-                    </MainLayout>
-                  </LanguageProvider>
-                }
-              />
-            ));
-          })}
-
-          {/* Legacy routes redirect to localized versions */}
-          <Route path="/tools/:toolSlug" element={<LegacyToolRedirect />} />
-          
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <AppRoutes />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
