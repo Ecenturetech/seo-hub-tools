@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import { Button } from './ui/button';
+import { AdBanner } from './AdBanner';
 
 interface ToolLayoutProps {
   children: ReactNode;
@@ -42,13 +43,8 @@ export function ToolLayout({ children, title, description, icon: Icon }: ToolLay
         {children}
       </div>
 
-      {/* Ad placeholder */}
-      <div className="mt-8">
-        <div className="ad-placeholder py-8">
-          <p>{t('common.adPlaceholder')}</p>
-          <p className="text-xs mt-1">728 x 90</p>
-        </div>
-      </div>
+      {/* AdSense Banner */}
+      <AdBanner className="mt-10" />
     </div>
   );
 }

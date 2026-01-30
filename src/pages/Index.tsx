@@ -15,6 +15,7 @@ import {
   Sparkles,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { AdBanner } from '@/components/AdBanner';
 import { toolRoutes, type ToolId, type LanguageCode } from '@/config/routes';
 
 const tools: { id: ToolId; nameKey: string; descKey: string; icon: React.ElementType; color: string }[] = [
@@ -74,19 +75,11 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Ad placeholder */}
-      <div className="max-w-5xl mx-auto px-4 mb-12">
-        <div className="ad-placeholder py-6">
-          <p>{t('common.adPlaceholder')}</p>
-          <p className="text-xs mt-1">728 x 90</p>
-        </div>
-      </div>
-
       {/* Tools Grid */}
       <section id="tools" className="px-4 pb-16 lg:pb-24">
         <div className="max-w-6xl mx-auto">
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {tools.map((tool, index) => {
+            {tools.slice(0, 3).map((tool, index) => {
               const Icon = tool.icon;
               return (
                 <Link
@@ -112,16 +105,41 @@ export default function Index() {
               );
             })}
           </div>
+
+          {/* Ad Banner after first row */}
+          <div className="max-w-5xl mx-auto my-8">
+            <AdBanner />
+          </div>
+
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {tools.slice(3).map((tool, index) => {
+              const Icon = tool.icon;
+              return (
+                <Link
+                  key={tool.id}
+                  to={getToolPath(tool.id)}
+                  className="tool-card group animate-fade-in"
+                  style={{ animationDelay: `${(index + 3) * 0.05}s` }}
+                >
+                  <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br ${tool.color} mb-4`}>
+                    <Icon className="h-6 w-6 text-white" />
+                  </div>
+                  <h3 className="font-semibold text-lg mb-2 group-hover:text-primary transition-colors">
+                    {t(tool.nameKey)}
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    {t(tool.descKey)}
+                  </p>
+                  <div className="mt-4 flex items-center text-sm text-primary font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                    {t('hero.cta').split(' ')[0]}
+                    <ArrowRight className="ml-1 h-4 w-4" />
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
         </div>
       </section>
-
-      {/* Ad placeholder */}
-      <div className="max-w-5xl mx-auto px-4 mb-12">
-        <div className="ad-placeholder py-6">
-          <p>{t('common.adPlaceholder')}</p>
-          <p className="text-xs mt-1">728 x 90</p>
-        </div>
-      </div>
 
       {/* Footer */}
       <footer className="border-t py-8 px-4">
