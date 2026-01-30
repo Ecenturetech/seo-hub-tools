@@ -27,9 +27,11 @@
     "serpSimulator": {
       "name": "Simulateur de SERP",
       "description": "Prévisualisez l'apparence de votre page dans les résultats Google",
+      "metaTitle": "Simulateur de SERP: Visualisez Votre Site sur Google",
+      "metaDescription": "Voyez comment votre site apparaît dans les résultats de recherche Google. Optimisez titres et descriptions en temps réel.",
       "title": "Titre de la Page",
       "titlePlaceholder": "Entrez le titre de votre page ici...",
-      "metaDescription": "Meta Description",
+      "inputMetaDescription": "Meta Description",
       "metaPlaceholder": "Entrez votre meta description ici...",
       "url": "URL d'Affichage",
       "urlPlaceholder": "https://exemple.com/page",
@@ -39,6 +41,8 @@
     "schemaGenerator": {
       "name": "Générateur de Schema JSON-LD",
       "description": "Générez des données structurées pour les extraits enrichis",
+      "metaTitle": "Générateur de Schéma JSON-LD: Données Structurées",
+      "metaDescription": "Créez facilement des données structurées JSON-LD pour améliorer le référencement de votre site web sur Google.",
       "type": "Type de Schema",
       "localBusiness": "Entreprise Locale",
       "article": "Article",
@@ -54,6 +58,8 @@
     "robotsGenerator": {
       "name": "Générateur de Robots.txt",
       "description": "Créez des règles robots.txt personnalisées pour les robots",
+      "metaTitle": "Générateur de Robots.txt Gratuit en Ligne",
+      "metaDescription": "Créez votre fichier robots.txt simplement et rapidement pour contrôler l'accès des robots à votre site.",
       "userAgent": "User Agent",
       "allBots": "Tous les Bots",
       "googlebot": "Googlebot",
@@ -69,6 +75,8 @@
     "wordCounter": {
       "name": "Compteur de Mots et Densité",
       "description": "Analysez la fréquence des mots et la densité des mots-clés",
+      "metaTitle": "Compteur de Mots et Densité de Mots-clés",
+      "metaDescription": "Analysez la fréquence des mots et la densité des mots-clés dans votre contenu. Optimisez votre texte pour le SEO.",
       "placeholder": "Collez votre texte ici pour analyser le nombre de mots et la densité des mots-clés...",
       "totalWords": "Total de Mots",
       "uniqueWords": "Mots Uniques",
@@ -81,10 +89,12 @@
     "metaAnalyzer": {
       "name": "Analyseur de Meta Tags",
       "description": "Extrayez et analysez les meta tags de n'importe quelle URL",
+      "metaTitle": "Analyseur de Meta Tags: Extrayez les Données SEO",
+      "metaDescription": "Extrayez et analysez les meta tags de n'importe quelle URL. Vérifiez titres, descriptions et tags Open Graph.",
       "urlPlaceholder": "Entrez l'URL à analyser...",
       "analyzing": "Analyse en cours...",
       "title": "Titre",
-      "description": "Description",
+      "resultDescription": "Description",
       "h1Tags": "Tags H1",
       "ogTags": "Tags Open Graph",
       "note": "Note : Cet outil simule l'extraction des meta tags. Pour une analyse réelle des URLs, un service backend serait nécessaire."
@@ -92,6 +102,8 @@
     "sitemapGenerator": {
       "name": "Générateur de Sitemap XML",
       "description": "Convertissez une liste d'URLs en sitemap XML valide",
+      "metaTitle": "Générateur de Sitemap XML: Créez des Sitemaps Valides",
+      "metaDescription": "Convertissez votre liste d'URLs en sitemap XML valide. Améliorez l'exploration et l'indexation par les moteurs.",
       "urlsPlaceholder": "Entrez les URLs (une par ligne) :\nhttps://exemple.com/\nhttps://exemple.com/a-propos\nhttps://exemple.com/contact",
       "changeFreq": "Fréquence de Modification",
       "priority": "Priorité",
@@ -102,6 +114,8 @@
     "webpConverter": {
       "name": "Convertisseur d'Image en WebP",
       "description": "Convertissez les images en WebP pour de meilleures performances",
+      "metaTitle": "Convertisseur d'Image en WebP: Optimisez en Ligne",
+      "metaDescription": "Convertissez les images JPG, PNG et GIF en WebP. Réduisez la taille des images sans perte de qualité.",
       "dropzone": "Déposez une image ici ou cliquez pour télécharger",
       "formats": "Supporte : JPG, PNG, GIF",
       "quality": "Qualité",
@@ -112,6 +126,8 @@
     "hreflangGenerator": {
       "name": "Générateur de Tags Hreflang",
       "description": "Générez des tags hreflang pour les sites multilingues",
+      "metaTitle": "Générateur de Tags Hreflang: SEO Multilingue",
+      "metaDescription": "Générez des tags hreflang pour sites multilingues. Améliorez le SEO international et évitez le contenu dupliqué.",
       "baseUrl": "URL de Base",
       "languages": "Langues",
       "addLanguage": "Ajouter une Langue",
@@ -122,6 +138,8 @@
     "linkValidator": {
       "name": "Validateur de Liens",
       "description": "Identifiez les liens internes vs externes dans le HTML",
+      "metaTitle": "Validateur de Liens: Analysez Liens Internes et Externes",
+      "metaDescription": "Identifiez et catégorisez les liens internes vs externes dans votre HTML. Auditez la structure de liens facilement.",
       "htmlPlaceholder": "Collez votre code HTML ici...",
       "domain": "Votre Domaine",
       "domainPlaceholder": "exemple.com",
@@ -132,6 +150,8 @@
     "utmGenerator": {
       "name": "Générateur de Liens UTM",
       "description": "Créez des URLs de suivi pour vos campagnes marketing",
+      "metaTitle": "Générateur de Liens UTM: Créez des URLs de Suivi",
+      "metaDescription": "Générez des URLs UTM pour vos campagnes marketing. Suivez les sources de trafic dans Google Analytics facilement.",
       "baseUrl": "URL du Site",
       "urlPlaceholder": "https://exemple.com/landing-page",
       "source": "Source de Campagne",

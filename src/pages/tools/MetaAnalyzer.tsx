@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Tags, Search, AlertCircle } from 'lucide-react';
 import { ToolLayout } from '@/components/ToolLayout';
+import { SEO } from '@/components/SEO';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
@@ -44,11 +45,16 @@ export default function MetaAnalyzer() {
   };
 
   return (
-    <ToolLayout
-      title={t('tools.metaAnalyzer.name')}
-      description={t('tools.metaAnalyzer.description')}
-      icon={Tags}
-    >
+    <>
+      <SEO
+        titleKey="tools.metaAnalyzer.metaTitle"
+        descriptionKey="tools.metaAnalyzer.metaDescription"
+      />
+      <ToolLayout
+        title={t('tools.metaAnalyzer.name')}
+        description={t('tools.metaAnalyzer.description')}
+        icon={Tags}
+      >
       <div className="space-y-6">
         <Alert>
           <AlertCircle className="h-4 w-4" />
@@ -92,7 +98,7 @@ export default function MetaAnalyzer() {
             </Card>
 
             <Card className="p-4">
-              <Label className="text-primary font-semibold">{t('tools.metaAnalyzer.description')}</Label>
+              <Label className="text-primary font-semibold">{t('tools.metaAnalyzer.resultDescription')}</Label>
               <p className="mt-2 text-sm">{result.description}</p>
               <div className="text-xs text-muted-foreground mt-1">
                 {result.description.length} {t('common.characters')}
@@ -125,6 +131,7 @@ export default function MetaAnalyzer() {
           </div>
         )}
       </div>
-    </ToolLayout>
+      </ToolLayout>
+    </>
   );
 }

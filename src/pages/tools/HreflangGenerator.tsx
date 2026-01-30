@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Globe, Plus, Trash2, Copy, Check } from 'lucide-react';
 import { ToolLayout } from '@/components/ToolLayout';
+import { SEO } from '@/components/SEO';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
@@ -66,11 +67,16 @@ export default function HreflangGenerator() {
   };
 
   return (
-    <ToolLayout
-      title={t('tools.hreflangGenerator.name')}
-      description={t('tools.hreflangGenerator.description')}
-      icon={Globe}
-    >
+    <>
+      <SEO
+        titleKey="tools.hreflangGenerator.metaTitle"
+        descriptionKey="tools.hreflangGenerator.metaDescription"
+      />
+      <ToolLayout
+        title={t('tools.hreflangGenerator.name')}
+        description={t('tools.hreflangGenerator.description')}
+        icon={Globe}
+      >
       <div className="grid gap-6 lg:grid-cols-2">
         <div className="space-y-6">
           <div>
@@ -156,6 +162,7 @@ export default function HreflangGenerator() {
           </Card>
         </div>
       </div>
-    </ToolLayout>
+      </ToolLayout>
+    </>
   );
 }

@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Target, Copy, Check } from 'lucide-react';
 import { ToolLayout } from '@/components/ToolLayout';
+import { SEO } from '@/components/SEO';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
@@ -41,11 +42,16 @@ export default function UtmGenerator() {
   };
 
   return (
-    <ToolLayout
-      title={t('tools.utmGenerator.name')}
-      description={t('tools.utmGenerator.description')}
-      icon={Target}
-    >
+    <>
+      <SEO
+        titleKey="tools.utmGenerator.metaTitle"
+        descriptionKey="tools.utmGenerator.metaDescription"
+      />
+      <ToolLayout
+        title={t('tools.utmGenerator.name')}
+        description={t('tools.utmGenerator.description')}
+        icon={Target}
+      >
       <div className="grid gap-6 lg:grid-cols-2">
         <div className="space-y-4">
           <div>
@@ -185,6 +191,7 @@ export default function UtmGenerator() {
           )}
         </div>
       </div>
-    </ToolLayout>
+      </ToolLayout>
+    </>
   );
 }

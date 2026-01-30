@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Code2, Copy, Check } from 'lucide-react';
 import { ToolLayout } from '@/components/ToolLayout';
+import { SEO } from '@/components/SEO';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
@@ -60,11 +61,16 @@ export default function SchemaGenerator() {
   };
 
   return (
-    <ToolLayout
-      title={t('tools.schemaGenerator.name')}
-      description={t('tools.schemaGenerator.description')}
-      icon={Code2}
-    >
+    <>
+      <SEO
+        titleKey="tools.schemaGenerator.metaTitle"
+        descriptionKey="tools.schemaGenerator.metaDescription"
+      />
+      <ToolLayout
+        title={t('tools.schemaGenerator.name')}
+        description={t('tools.schemaGenerator.description')}
+        icon={Code2}
+      >
       <Tabs value={schemaType} onValueChange={setSchemaType} className="w-full">
         <TabsList className="mb-6">
           <TabsTrigger value="localBusiness">{t('tools.schemaGenerator.localBusiness')}</TabsTrigger>
@@ -179,5 +185,6 @@ export default function SchemaGenerator() {
         </div>
       </Tabs>
     </ToolLayout>
+    </>
   );
 }

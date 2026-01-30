@@ -2,6 +2,7 @@ import { useState, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Image as ImageIcon, Upload, Download } from 'lucide-react';
 import { ToolLayout } from '@/components/ToolLayout';
+import { SEO } from '@/components/SEO';
 import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
 import { Slider } from '@/components/ui/slider';
@@ -101,11 +102,16 @@ export default function WebpConverter() {
   const savings = originalSize > 0 ? ((1 - convertedSize / originalSize) * 100).toFixed(1) : 0;
 
   return (
-    <ToolLayout
-      title={t('tools.webpConverter.name')}
-      description={t('tools.webpConverter.description')}
-      icon={ImageIcon}
-    >
+    <>
+      <SEO
+        titleKey="tools.webpConverter.metaTitle"
+        descriptionKey="tools.webpConverter.metaDescription"
+      />
+      <ToolLayout
+        title={t('tools.webpConverter.name')}
+        description={t('tools.webpConverter.description')}
+        icon={ImageIcon}
+      >
       <div className="grid gap-6 lg:grid-cols-2">
         <div className="space-y-6">
           {/* Drop zone */}
@@ -193,6 +199,7 @@ export default function WebpConverter() {
           </Card>
         </div>
       </div>
-    </ToolLayout>
+      </ToolLayout>
+    </>
   );
 }
