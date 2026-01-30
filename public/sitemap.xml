@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Home Pages -->
+  <url>
+    <loc>https://seolayerstudio.com/en</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seolayerstudio.com/en"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/pt</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seolayerstudio.com/en"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/es</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seolayerstudio.com/en"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/fr</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seolayerstudio.com/en"/>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- SERP Simulator - Priority 0.9 -->
+  <url>
+    <loc>https://seolayerstudio.com/en/serp-simulator</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/serp-simulator"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/simulador-serp"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/simulador-serp"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/simulateur-serp"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/pt/simulador-serp</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/serp-simulator"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/simulador-serp"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/simulador-serp"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/simulateur-serp"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/es/simulador-serp</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/serp-simulator"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/simulador-serp"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/simulador-serp"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/simulateur-serp"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/fr/simulateur-serp</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/serp-simulator"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/simulador-serp"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/simulador-serp"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/simulateur-serp"/>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Robots.txt Generator - Priority 0.8 -->
+  <url>
+    <loc>https://seolayerstudio.com/en/robots-txt-generator</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/robots-txt-generator"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/gerador-robots-txt"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/generador-robots-txt"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/generateur-robots-txt"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/pt/gerador-robots-txt</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/robots-txt-generator"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/gerador-robots-txt"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/generador-robots-txt"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/generateur-robots-txt"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/es/generador-robots-txt</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/robots-txt-generator"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/gerador-robots-txt"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/generador-robots-txt"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/generateur-robots-txt"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/fr/generateur-robots-txt</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/robots-txt-generator"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/gerador-robots-txt"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/generador-robots-txt"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/generateur-robots-txt"/>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Schema Generator - Priority 0.8 -->
+  <url>
+    <loc>https://seolayerstudio.com/en/schema-generator</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/schema-generator"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/gerador-schema"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/generador-schema"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/generateur-schema"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/pt/gerador-schema</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/schema-generator"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/gerador-schema"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/generador-schema"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/generateur-schema"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/es/generador-schema</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/schema-generator"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/gerador-schema"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/generador-schema"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/generateur-schema"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/fr/generateur-schema</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/schema-generator"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/gerador-schema"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/generador-schema"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/generateur-schema"/>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Word Counter - Priority 0.7 -->
+  <url>
+    <loc>https://seolayerstudio.com/en/word-counter</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/word-counter"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/contador-palavras"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/contador-palabras"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/compteur-mots"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/pt/contador-palavras</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/word-counter"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/contador-palavras"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/contador-palabras"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/compteur-mots"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/es/contador-palabras</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/word-counter"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/contador-palavras"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/contador-palabras"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/compteur-mots"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/fr/compteur-mots</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/word-counter"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/contador-palavras"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/contador-palabras"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/compteur-mots"/>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Meta Analyzer - Priority 0.7 -->
+  <url>
+    <loc>https://seolayerstudio.com/en/meta-analyzer</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/meta-analyzer"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/analisador-meta-tags"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/analizador-meta-tags"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/analyseur-meta-tags"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/pt/analisador-meta-tags</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/meta-analyzer"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/analisador-meta-tags"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/analizador-meta-tags"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/analyseur-meta-tags"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/es/analizador-meta-tags</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/meta-analyzer"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/analisador-meta-tags"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/analizador-meta-tags"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/analyseur-meta-tags"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/fr/analyseur-meta-tags</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/meta-analyzer"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/analisador-meta-tags"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/analizador-meta-tags"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/analyseur-meta-tags"/>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Sitemap Generator - Priority 0.7 -->
+  <url>
+    <loc>https://seolayerstudio.com/en/sitemap-generator</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/sitemap-generator"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/gerador-sitemap"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/generador-sitemap"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/generateur-sitemap"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/pt/gerador-sitemap</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/sitemap-generator"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/gerador-sitemap"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/generador-sitemap"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/generateur-sitemap"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/es/generador-sitemap</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/sitemap-generator"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/gerador-sitemap"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/generador-sitemap"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/generateur-sitemap"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/fr/generateur-sitemap</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/sitemap-generator"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/gerador-sitemap"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/generador-sitemap"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/generateur-sitemap"/>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- WebP Converter - Priority 0.7 -->
+  <url>
+    <loc>https://seolayerstudio.com/en/webp-converter</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/webp-converter"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/conversor-webp"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/convertidor-webp"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/convertisseur-webp"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/pt/conversor-webp</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/webp-converter"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/conversor-webp"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/convertidor-webp"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/convertisseur-webp"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/es/convertidor-webp</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/webp-converter"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/conversor-webp"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/convertidor-webp"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/convertisseur-webp"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/fr/convertisseur-webp</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/webp-converter"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/conversor-webp"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/convertidor-webp"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/convertisseur-webp"/>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Hreflang Generator - Priority 0.6 -->
+  <url>
+    <loc>https://seolayerstudio.com/en/hreflang-generator</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/hreflang-generator"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/gerador-hreflang"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/generador-hreflang"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/generateur-hreflang"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/pt/gerador-hreflang</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/hreflang-generator"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/gerador-hreflang"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/generador-hreflang"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/generateur-hreflang"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/es/generador-hreflang</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/hreflang-generator"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/gerador-hreflang"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/generador-hreflang"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/generateur-hreflang"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/fr/generateur-hreflang</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/hreflang-generator"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/gerador-hreflang"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/generador-hreflang"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/generateur-hreflang"/>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Link Validator - Priority 0.6 -->
+  <url>
+    <loc>https://seolayerstudio.com/en/link-validator</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/link-validator"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/validador-links"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/validador-enlaces"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/validateur-liens"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/pt/validador-links</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/link-validator"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/validador-links"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/validador-enlaces"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/validateur-liens"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/es/validador-enlaces</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/link-validator"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/validador-links"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/validador-enlaces"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/validateur-liens"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/fr/validateur-liens</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/link-validator"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/validador-links"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/validador-enlaces"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/validateur-liens"/>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- UTM Generator - Priority 0.6 -->
+  <url>
+    <loc>https://seolayerstudio.com/en/utm-generator</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/utm-generator"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/gerador-utm"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/generador-utm"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/generateur-utm"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/pt/gerador-utm</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/utm-generator"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/gerador-utm"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/generador-utm"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/generateur-utm"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/es/generador-utm</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/utm-generator"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/gerador-utm"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/generador-utm"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/generateur-utm"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://seolayerstudio.com/fr/generateur-utm</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seolayerstudio.com/en/utm-generator"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://seolayerstudio.com/pt/gerador-utm"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seolayerstudio.com/es/generador-utm"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://seolayerstudio.com/fr/generateur-utm"/>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
