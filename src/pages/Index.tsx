@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import {
   Search,
   Code2,
@@ -15,9 +15,9 @@ import {
   Sparkles,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
+import { toolRoutes, type ToolId, type LanguageCode } from '@/config/routes';
 
-const tools = [
+const tools: { id: ToolId; nameKey: string; descKey: string; icon: React.ElementType; color: string }[] = [
   { id: 'serp-simulator', nameKey: 'tools.serpSimulator.name', descKey: 'tools.serpSimulator.description', icon: Search, color: 'from-blue-500 to-indigo-600' },
   { id: 'schema-generator', nameKey: 'tools.schemaGenerator.name', descKey: 'tools.schemaGenerator.description', icon: Code2, color: 'from-purple-500 to-violet-600' },
   { id: 'robots-generator', nameKey: 'tools.robotsGenerator.name', descKey: 'tools.robotsGenerator.description', icon: FileText, color: 'from-emerald-500 to-teal-600' },
@@ -31,7 +31,11 @@ const tools = [
 ];
 
 export default function Index() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const { lang } = useParams<{ lang: string }>();
+  
+  const currentLang = (lang || i18n.language || 'en') as LanguageCode;
+  const getToolPath = (toolId: ToolId) => `/${currentLang}/${toolRoutes[toolId][currentLang]}`;
 
   return (
     <div className="min-h-screen">
@@ -46,15 +50,19 @@ export default function Index() {
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6 animate-fade-in">
             <Sparkles className="h-4 w-4" />
-            <span>10 {t('common.tools')} • 4 {t('common.tools').toLowerCase()}</span>
+            <span>10 {t('common.tools')} • 4 Languages</span>
           </div>
 
           <h1 className="text-4xl lg:text-6xl font-bold mb-6 animate-slide-up">
             <span className="gradient-text">{t('hero.title')}</span>
           </h1>
 
-          <p className="text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 animate-slide-up" style={{ animationDelay: '0.1s' }}>
+          <p className="text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto mb-4 animate-slide-up" style={{ animationDelay: '0.1s' }}>
             {t('hero.subtitle')}
+          </p>
+
+          <p className="text-sm text-muted-foreground/70 mb-8 animate-slide-up" style={{ animationDelay: '0.15s' }}>
+            {t('common.slogan')}
           </p>
 
           <Button size="lg" className="animate-slide-up" style={{ animationDelay: '0.2s' }} asChild>
@@ -83,7 +91,7 @@ export default function Index() {
               return (
                 <Link
                   key={tool.id}
-                  to={`/tools/${tool.id}`}
+                  to={getToolPath(tool.id)}
                   className="tool-card group animate-fade-in"
                   style={{ animationDelay: `${index * 0.05}s` }}
                 >
