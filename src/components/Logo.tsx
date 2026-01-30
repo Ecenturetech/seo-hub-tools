@@ -12,11 +12,12 @@ export function Logo({ className, size = 'md' }: LogoProps) {
   const { resolvedTheme } = useTheme();
   
   const sizes = {
-    sm: 'h-8',
-    md: 'h-10',
-    lg: 'h-14',
+    sm: 'h-12',
+    md: 'h-16',
+    lg: 'h-20',
   };
 
+  // bg_black para modo escuro, bg_white para modo claro
   const logo = resolvedTheme === 'dark' ? logoDark : logoLight;
 
   return (
