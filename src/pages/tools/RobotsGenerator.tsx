@@ -78,6 +78,7 @@ export default function RobotsGenerator() {
         title={t('tools.robotsGenerator.name')}
         description={t('tools.robotsGenerator.description')}
         icon={FileText}
+        toolKey="robotsGenerator"
       >
       <div className="grid gap-6 lg:grid-cols-2">
         <div className="space-y-6">

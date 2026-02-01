@@ -54,6 +54,7 @@ export default function MetaAnalyzer() {
         title={t('tools.metaAnalyzer.name')}
         description={t('tools.metaAnalyzer.description')}
         icon={Tags}
+        toolKey="metaAnalyzer"
       >
       <div className="space-y-6">
         <Alert>

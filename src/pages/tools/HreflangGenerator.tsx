@@ -76,6 +76,7 @@ export default function HreflangGenerator() {
         title={t('tools.hreflangGenerator.name')}
         description={t('tools.hreflangGenerator.description')}
         icon={Globe}
+        toolKey="hreflangGenerator"
       >
       <div className="grid gap-6 lg:grid-cols-2">
         <div className="space-y-6">

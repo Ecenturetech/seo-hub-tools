@@ -51,6 +51,7 @@ export default function LinkValidator() {
         title={t('tools.linkValidator.name')}
         description={t('tools.linkValidator.description')}
         icon={Link2}
+        toolKey="linkValidator"
       >
       <div className="grid gap-6 lg:grid-cols-2">
         <div className="space-y-4">

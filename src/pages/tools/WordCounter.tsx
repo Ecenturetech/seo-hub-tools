@@ -67,6 +67,7 @@ export default function WordCounter() {
         title={t('tools.wordCounter.name')}
         description={t('tools.wordCounter.description')}
         icon={BarChart3}
+        toolKey="wordCounter"
       >
       <div className="grid gap-6 lg:grid-cols-2">
         <div>

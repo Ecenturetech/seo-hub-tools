@@ -2,7 +2,6 @@ import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ClipboardCheck, Check } from 'lucide-react';
 import { ToolLayout } from '@/components/ToolLayout';
-import { ToolDescription } from '@/components/ToolDescription';
 import { ClearDataButton } from '@/components/ClearDataButton';
 import { SEO } from '@/components/SEO';
 import { Card } from '@/components/ui/card';
@@ -123,7 +122,6 @@ export default function SeoChecklist() {
           {renderChecklistSection(t('tools.seoChecklist.technical'), technicalItems)}
         </div>
 
-        <ToolDescription toolKey="seoChecklist" />
       </ToolLayout>
     </>
   );

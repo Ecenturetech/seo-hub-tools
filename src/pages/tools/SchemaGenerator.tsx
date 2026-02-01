@@ -70,6 +70,7 @@ export default function SchemaGenerator() {
         title={t('tools.schemaGenerator.name')}
         description={t('tools.schemaGenerator.description')}
         icon={Code2}
+        toolKey="schemaGenerator"
       >
       <Tabs value={schemaType} onValueChange={setSchemaType} className="w-full">
         <TabsList className="mb-6">
