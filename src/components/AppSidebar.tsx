@@ -41,7 +41,6 @@ const tools: { id: ToolId; nameKey: string }[] = [
   { id: 'schema-generator', nameKey: 'tools.schemaGenerator.name' },
   { id: 'robots-generator', nameKey: 'tools.robotsGenerator.name' },
   { id: 'word-counter', nameKey: 'tools.wordCounter.name' },
-  { id: 'meta-analyzer', nameKey: 'tools.metaAnalyzer.name' },
   { id: 'sitemap-generator', nameKey: 'tools.sitemapGenerator.name' },
   { id: 'webp-converter', nameKey: 'tools.webpConverter.name' },
   { id: 'hreflang-generator', nameKey: 'tools.hreflangGenerator.name' },
