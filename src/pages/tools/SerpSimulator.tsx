@@ -50,6 +50,7 @@ export default function SerpSimulator() {
         title={t('tools.serpSimulator.name')}
         description={t('tools.serpSimulator.description')}
         icon={Search}
+        toolKey="serpSimulator"
       >
         <div className="grid gap-6 lg:grid-cols-2">
           {/* Input Section */}

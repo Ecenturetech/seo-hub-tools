@@ -51,6 +51,7 @@ export default function UtmGenerator() {
         title={t('tools.utmGenerator.name')}
         description={t('tools.utmGenerator.description')}
         icon={Target}
+        toolKey="utmGenerator"
       >
       <div className="grid gap-6 lg:grid-cols-2">
         <div className="space-y-4">

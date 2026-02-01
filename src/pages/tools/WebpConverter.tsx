@@ -111,6 +111,7 @@ export default function WebpConverter() {
         title={t('tools.webpConverter.name')}
         description={t('tools.webpConverter.description')}
         icon={ImageIcon}
+        toolKey="webpConverter"
       >
       <div className="grid gap-6 lg:grid-cols-2">
         <div className="space-y-6">

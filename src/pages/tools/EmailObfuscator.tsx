@@ -2,7 +2,6 @@ import { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Mail, Copy, Check } from 'lucide-react';
 import { ToolLayout } from '@/components/ToolLayout';
-import { ToolDescription } from '@/components/ToolDescription';
 import { ClearDataButton } from '@/components/ClearDataButton';
 import { SEO } from '@/components/SEO';
 import { Card } from '@/components/ui/card';
@@ -198,7 +197,6 @@ export default function EmailObfuscator() {
           )}
         </div>
 
-        <ToolDescription toolKey="emailObfuscator" />
       </ToolLayout>
     </>
   );

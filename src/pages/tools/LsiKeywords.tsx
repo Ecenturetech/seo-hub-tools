@@ -2,7 +2,6 @@ import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Sparkles } from 'lucide-react';
 import { ToolLayout } from '@/components/ToolLayout';
-import { ToolDescription } from '@/components/ToolDescription';
 import { ClearDataButton } from '@/components/ClearDataButton';
 import { SEO } from '@/components/SEO';
 import { Textarea } from '@/components/ui/textarea';
@@ -108,7 +107,6 @@ export default function LsiKeywords() {
           </div>
         </div>
 
-        <ToolDescription toolKey="lsiKeywords" />
       </ToolLayout>
     </>
   );

@@ -76,6 +76,7 @@ ${urlEntries}
         title={t('tools.sitemapGenerator.name')}
         description={t('tools.sitemapGenerator.description')}
         icon={Map}
+        toolKey="sitemapGenerator"
       >
       <div className="grid gap-6 lg:grid-cols-2">
         <div className="space-y-4">
