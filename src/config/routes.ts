@@ -60,10 +60,54 @@ export const toolRoutes = {
     es: 'generador-utm',
     fr: 'generateur-utm',
   },
+  // New tools
+  'lsi-keywords': {
+    en: 'lsi-keywords-extractor',
+    pt: 'extrator-keywords-lsi',
+    es: 'extractor-keywords-lsi',
+    fr: 'extracteur-keywords-lsi',
+  },
+  'seo-checklist': {
+    en: 'seo-checklist',
+    pt: 'checklist-seo',
+    es: 'checklist-seo',
+    fr: 'checklist-seo',
+  },
+  'favicon-simulator': {
+    en: 'favicon-simulator',
+    pt: 'simulador-favicon',
+    es: 'simulador-favicon',
+    fr: 'simulateur-favicon',
+  },
+  'email-obfuscator': {
+    en: 'email-obfuscator',
+    pt: 'ofuscador-email',
+    es: 'ofuscador-email',
+    fr: 'obfuscateur-email',
+  },
+  'diff-checker': {
+    en: 'diff-checker',
+    pt: 'comparador-texto',
+    es: 'comparador-texto',
+    fr: 'comparateur-texte',
+  },
+  'readability-analyzer': {
+    en: 'readability-analyzer',
+    pt: 'analisador-legibilidade',
+    es: 'analizador-legibilidad',
+    fr: 'analyseur-lisibilite',
+  },
 } as const;
 
 export type ToolId = keyof typeof toolRoutes;
 export type LanguageCode = 'en' | 'pt' | 'es' | 'fr';
+
+// Tool categories
+export const toolCategories = {
+  content: ['word-counter', 'lsi-keywords', 'readability-analyzer', 'diff-checker'] as ToolId[],
+  technical: ['serp-simulator', 'schema-generator', 'robots-generator', 'sitemap-generator', 'hreflang-generator', 'link-validator', 'utm-generator', 'seo-checklist', 'email-obfuscator'] as ToolId[],
+  image: ['webp-converter', 'favicon-simulator'] as ToolId[],
+};
 
 // Get localized path for a tool
 export function getToolPath(toolId: ToolId, lang: LanguageCode): string {

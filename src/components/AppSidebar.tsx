@@ -18,10 +18,14 @@ import {
   Home,
   Menu,
   X,
+  Sparkles,
+  ClipboardCheck,
+  Mail,
+  BookOpen,
 } from 'lucide-react';
 import { useState } from 'react';
 import { Button } from './ui/button';
-import { toolRoutes, type ToolId, type LanguageCode } from '@/config/routes';
+import { toolRoutes, toolCategories, type ToolId, type LanguageCode } from '@/config/routes';
 
 const toolIcons: Record<ToolId, React.ElementType> = {
   'serp-simulator': Search,
@@ -34,19 +38,38 @@ const toolIcons: Record<ToolId, React.ElementType> = {
   'hreflang-generator': Globe,
   'link-validator': Link2,
   'utm-generator': Target,
+  'lsi-keywords': Sparkles,
+  'seo-checklist': ClipboardCheck,
+  'favicon-simulator': Image,
+  'email-obfuscator': Mail,
+  'diff-checker': FileText,
+  'readability-analyzer': BookOpen,
 };
 
-const tools: { id: ToolId; nameKey: string }[] = [
-  { id: 'serp-simulator', nameKey: 'tools.serpSimulator.name' },
-  { id: 'schema-generator', nameKey: 'tools.schemaGenerator.name' },
-  { id: 'robots-generator', nameKey: 'tools.robotsGenerator.name' },
-  { id: 'word-counter', nameKey: 'tools.wordCounter.name' },
-  { id: 'sitemap-generator', nameKey: 'tools.sitemapGenerator.name' },
-  { id: 'webp-converter', nameKey: 'tools.webpConverter.name' },
-  { id: 'hreflang-generator', nameKey: 'tools.hreflangGenerator.name' },
-  { id: 'link-validator', nameKey: 'tools.linkValidator.name' },
-  { id: 'utm-generator', nameKey: 'tools.utmGenerator.name' },
-];
+const toolNameKeys: Record<ToolId, string> = {
+  'serp-simulator': 'tools.serpSimulator.name',
+  'schema-generator': 'tools.schemaGenerator.name',
+  'robots-generator': 'tools.robotsGenerator.name',
+  'word-counter': 'tools.wordCounter.name',
+  'meta-analyzer': 'tools.metaAnalyzer.name',
+  'sitemap-generator': 'tools.sitemapGenerator.name',
+  'webp-converter': 'tools.webpConverter.name',
+  'hreflang-generator': 'tools.hreflangGenerator.name',
+  'link-validator': 'tools.linkValidator.name',
+  'utm-generator': 'tools.utmGenerator.name',
+  'lsi-keywords': 'tools.lsiKeywords.name',
+  'seo-checklist': 'tools.seoChecklist.name',
+  'favicon-simulator': 'tools.faviconSimulator.name',
+  'email-obfuscator': 'tools.emailObfuscator.name',
+  'diff-checker': 'tools.diffChecker.name',
+  'readability-analyzer': 'tools.readabilityAnalyzer.name',
+};
+
+const categoryLabels = {
+  content: 'categories.content',
+  technical: 'categories.technical',
+  image: 'categories.image',
+} as const;
 
 export function AppSidebar() {
   const { t, i18n } = useTranslation();
@@ -71,6 +94,30 @@ export function AppSidebar() {
   const isHomeActive = () => {
     const pathParts = location.pathname.split('/').filter(Boolean);
     return pathParts.length <= 1;
+  };
+
+  const renderToolLink = (toolId: ToolId) => {
+    // Skip meta-analyzer as it's disabled
+    if (toolId === 'meta-analyzer') return null;
+    
+    const Icon = toolIcons[toolId];
+    const isActive = isToolActive(toolId);
+    return (
+      <Link
+        key={toolId}
+        to={getToolPath(toolId)}
+        onClick={() => setIsOpen(false)}
+        className={cn(
+          'flex items-center gap-3 px-3 py-2 rounded-lg text-sm transition-colors',
+          isActive
+            ? 'bg-sidebar-accent text-sidebar-accent-foreground font-medium'
+            : 'text-sidebar-foreground hover:bg-sidebar-accent/50'
+        )}
+      >
+        <Icon className="h-4 w-4" />
+        <span className="truncate">{t(toolNameKeys[toolId])}</span>
+      </Link>
+    );
   };
 
   return (
@@ -118,7 +165,7 @@ export function AppSidebar() {
               to={getHomePath()}
               onClick={() => setIsOpen(false)}
               className={cn(
-                'flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors mb-2',
+                'flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors mb-4',
                 isHomeActive()
                   ? 'bg-sidebar-accent text-sidebar-accent-foreground'
                   : 'text-sidebar-foreground hover:bg-sidebar-accent/50'
@@ -128,33 +175,34 @@ export function AppSidebar() {
               {t('common.home')}
             </Link>
 
-            <div className="mt-4 mb-2">
+            {/* Content Category */}
+            <div className="mb-4">
               <span className="px-3 text-xs font-semibold text-muted-foreground uppercase tracking-wider">
-                {t('common.tools')}
+                {t(categoryLabels.content)}
               </span>
+              <div className="mt-2 space-y-1">
+                {toolCategories.content.map(renderToolLink)}
+              </div>
             </div>
 
-            <div className="space-y-1">
-              {tools.map((tool) => {
-                const Icon = toolIcons[tool.id];
-                const isActive = isToolActive(tool.id);
-                return (
-                  <Link
-                    key={tool.id}
-                    to={getToolPath(tool.id)}
-                    onClick={() => setIsOpen(false)}
-                    className={cn(
-                      'flex items-center gap-3 px-3 py-2 rounded-lg text-sm transition-colors',
-                      isActive
-                        ? 'bg-sidebar-accent text-sidebar-accent-foreground font-medium'
-                        : 'text-sidebar-foreground hover:bg-sidebar-accent/50'
-                    )}
-                  >
-                    <Icon className="h-4 w-4" />
-                    <span className="truncate">{t(tool.nameKey)}</span>
-                  </Link>
-                );
-              })}
+            {/* Technical Category */}
+            <div className="mb-4">
+              <span className="px-3 text-xs font-semibold text-muted-foreground uppercase tracking-wider">
+                {t(categoryLabels.technical)}
+              </span>
+              <div className="mt-2 space-y-1">
+                {toolCategories.technical.map(renderToolLink)}
+              </div>
+            </div>
+
+            {/* Image Category */}
+            <div className="mb-4">
+              <span className="px-3 text-xs font-semibold text-muted-foreground uppercase tracking-wider">
+                {t(categoryLabels.image)}
+              </span>
+              <div className="mt-2 space-y-1">
+                {toolCategories.image.map(renderToolLink)}
+              </div>
             </div>
           </nav>
 
