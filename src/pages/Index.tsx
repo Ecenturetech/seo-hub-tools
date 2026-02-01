@@ -190,10 +190,20 @@ export default function Index() {
 
       {/* Footer */}
       <footer className="border-t py-8 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <p className="text-sm text-muted-foreground">
-            {t('footer.madeWith')} ❤️ {t('footer.for')}
-          </p>
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <p className="text-sm text-muted-foreground">
+              {t('footer.madeWith')} ❤️ {t('footer.for')}
+            </p>
+            <div className="flex items-center gap-6">
+              <Link to={`/${currentLang}/about`} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                {t('footer.about')}
+              </Link>
+              <Link to={`/${currentLang}/privacy`} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                {t('footer.privacy')}
+              </Link>
+            </div>
+          </div>
         </div>
       </footer>
     </div>

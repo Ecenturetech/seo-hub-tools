@@ -523,6 +523,67 @@
   },
   "footer": {
     "madeWith": "Made with",
-    "for": "for SEO professionals"
+    "for": "for SEO professionals",
+    "about": "About",
+    "privacy": "Privacy & Terms"
+  },
+  "about": {
+    "metaTitle": "About SeoLayer Studio | Client-Side SEO Tools",
+    "metaDescription": "Learn about SeoLayer Studio's story and our mission to democratize access to technical SEO tools.",
+    "title": "About SeoLayer Studio",
+    "subtitle": "Fast, private SEO tools without intrusive ads.",
+    "story": {
+      "title": "Our Story",
+      "content": "SeoLayer Studio was born from a CTO and software developer's need for fast SEO tools without intrusive ads that respected privacy. Tired of slow tools that sent data to external servers, we decided to create a solution that works 100% in the user's browser."
+    },
+    "whyChooseUs": "Why Choose SeoLayer Studio?",
+    "features": {
+      "privacy": {
+        "title": "Complete Privacy",
+        "description": "Your data never leaves your browser. 100% local processing."
+      },
+      "speed": {
+        "title": "Instant Speed",
+        "description": "No waiting for servers. Results in milliseconds."
+      },
+      "accessibility": {
+        "title": "Free Access",
+        "description": "Professional tools without registration or payment required."
+      }
+    },
+    "privacy": {
+      "title": "Our Privacy Commitment",
+      "content": "Unlike other tools, SeoLayer Studio processes your data directly in your browser. We don't send your texts, images, or sensitive data to our servers. Everything is done locally (Client-Side), ensuring total speed and security."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "content": "To democratize access to technical SEO and AIO (AI Optimization) tools for developers, content creators, and marketing professionals. We believe good tools should be accessible to everyone, regardless of budget."
+    },
+    "cta": "Explore Tools"
+  },
+  "privacy": {
+    "metaTitle": "Privacy Policy & Terms of Use | SeoLayer Studio",
+    "metaDescription": "Our privacy policy explains how we process data locally and our commitment to your security.",
+    "title": "Privacy Policy & Terms of Use",
+    "lastUpdated": "Last updated",
+    "intro": "SeoLayer Studio is committed to protecting your privacy. This policy describes how our tools work and how we handle your data.",
+    "dataProcessing": {
+      "title": "Data Processing",
+      "content": "All SeoLayer Studio tools work via Client-Side Scripting (JavaScript in the browser). This means no data entered into the tools is sent to or stored on our servers.\n\nYour texts, images, URLs, and any other data you enter are processed exclusively on your device. We have no access to this information."
+    },
+    "cookies": {
+      "title": "Cookies & Advertising",
+      "content": "We use Google AdSense to display ads on our site. Google may use cookies to personalize ads based on your browsing history.\n\nYou can manage your ad preferences in Google's ad settings or opt out of personalized advertising."
+    },
+    "localStorage": {
+      "title": "Local Storage",
+      "content": "We use the browser's LocalStorage only for user convenience, saving tool progress so you can continue where you left off.\n\nThis data is stored only on your device and can be cleared at any time:\n• Using the 'Clear Data' button available in each tool\n• Clearing your browser cache\n• Using private browsing mode"
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "content": "Use of SeoLayer Studio tools is at your own risk. We do not guarantee specific ranking results on Google or any other search engine.\n\nAlthough we follow best practices recommended by Google and the SEO industry, results may vary depending on various factors outside our control."
+    },
+    "googlePrivacy": "For more information on how Google uses data:",
+    "contact": "Questions about our privacy policy? Contact us through our website."
   }
 }

@@ -200,6 +200,67 @@
   },
   "footer": {
     "madeWith": "Fait avec",
-    "for": "pour les professionnels du SEO"
+    "for": "pour les professionnels du SEO",
+    "about": "À propos",
+    "privacy": "Confidentialité et CGU"
+  },
+  "about": {
+    "metaTitle": "À propos de SeoLayer Studio | Outils SEO Client-Side",
+    "metaDescription": "Découvrez l'histoire de SeoLayer Studio et notre mission de démocratiser l'accès aux outils SEO techniques.",
+    "title": "À propos de SeoLayer Studio",
+    "subtitle": "Outils SEO rapides, privés et sans publicités intrusives.",
+    "story": {
+      "title": "Notre Histoire",
+      "content": "SeoLayer Studio est né du besoin d'un CTO et développeur de logiciels d'avoir des outils SEO rapides, sans publicités intrusives et respectueux de la vie privée."
+    },
+    "whyChooseUs": "Pourquoi choisir SeoLayer Studio ?",
+    "features": {
+      "privacy": {
+        "title": "Confidentialité Totale",
+        "description": "Vos données ne quittent jamais votre navigateur. Traitement 100% local."
+      },
+      "speed": {
+        "title": "Vitesse Instantanée",
+        "description": "Pas d'attente de serveurs. Résultats en millisecondes."
+      },
+      "accessibility": {
+        "title": "Accès Gratuit",
+        "description": "Outils professionnels sans inscription ni paiement."
+      }
+    },
+    "privacy": {
+      "title": "Engagement pour votre Confidentialité",
+      "content": "Contrairement à d'autres outils, SeoLayer Studio traite vos données directement dans votre navigateur. Nous n'envoyons pas vos textes, images ou données sensibles à nos serveurs."
+    },
+    "mission": {
+      "title": "Notre Mission",
+      "content": "Démocratiser l'accès aux outils techniques de SEO et AIO pour les développeurs, créateurs de contenu et professionnels du marketing."
+    },
+    "cta": "Explorer les Outils"
+  },
+  "privacy": {
+    "metaTitle": "Politique de Confidentialité et CGU | SeoLayer Studio",
+    "metaDescription": "Notre politique de confidentialité explique comment nous traitons les données localement.",
+    "title": "Politique de Confidentialité et Conditions d'Utilisation",
+    "lastUpdated": "Dernière mise à jour",
+    "intro": "SeoLayer Studio s'engage à protéger votre vie privée.",
+    "dataProcessing": {
+      "title": "Traitement des Données",
+      "content": "Tous les outils fonctionnent via Client-Side Scripting. Aucune donnée n'est envoyée à nos serveurs."
+    },
+    "cookies": {
+      "title": "Cookies et Publicité",
+      "content": "Nous utilisons Google AdSense pour afficher des publicités. Google peut utiliser des cookies pour personnaliser les annonces."
+    },
+    "localStorage": {
+      "title": "Stockage Local",
+      "content": "Nous utilisons le LocalStorage uniquement pour votre commodité. Vous pouvez effacer ces données à tout moment."
+    },
+    "disclaimer": {
+      "title": "Clause de Non-Responsabilité",
+      "content": "L'utilisation des outils est à vos risques. Nous ne garantissons pas de résultats de classement spécifiques."
+    },
+    "googlePrivacy": "Pour plus d'informations sur l'utilisation des données par Google :",
+    "contact": "Des questions ? Contactez-nous via notre site."
   }
 }

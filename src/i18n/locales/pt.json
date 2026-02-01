@@ -523,6 +523,67 @@
   },
   "footer": {
     "madeWith": "Feito com",
-    "for": "para profissionais de SEO"
+    "for": "para profissionais de SEO",
+    "about": "Sobre",
+    "privacy": "Privacidade e Termos"
+  },
+  "about": {
+    "metaTitle": "Sobre o SeoLayer Studio | Ferramentas de SEO Client-Side",
+    "metaDescription": "Conheça a história do SeoLayer Studio e nossa missão de democratizar o acesso a ferramentas técnicas de SEO.",
+    "title": "Sobre o SeoLayer Studio",
+    "subtitle": "Ferramentas de SEO rápidas, privadas e sem anúncios intrusivos.",
+    "story": {
+      "title": "Nossa História",
+      "content": "O SeoLayer Studio nasceu da necessidade de um CTO e desenvolvedor de software em ter ferramentas de SEO rápidas, sem anúncios intrusivos e que respeitassem a privacidade. Cansado de ferramentas lentas que enviavam dados para servidores externos, decidimos criar uma solução que funcionasse 100% no navegador do usuário."
+    },
+    "whyChooseUs": "Por que escolher o SeoLayer Studio?",
+    "features": {
+      "privacy": {
+        "title": "Privacidade Total",
+        "description": "Seus dados nunca saem do seu navegador. Processamento 100% local."
+      },
+      "speed": {
+        "title": "Velocidade Instantânea",
+        "description": "Sem espera por servidores. Resultados em milissegundos."
+      },
+      "accessibility": {
+        "title": "Acesso Gratuito",
+        "description": "Ferramentas profissionais sem necessidade de cadastro ou pagamento."
+      }
+    },
+    "privacy": {
+      "title": "Compromisso com sua Privacidade",
+      "content": "Ao contrário de outras ferramentas, o SeoLayer Studio processa seus dados diretamente no seu navegador. Nós não enviamos seus textos, imagens ou dados sensíveis para nossos servidores. Tudo é feito localmente (Client-Side), garantindo velocidade e segurança total."
+    },
+    "mission": {
+      "title": "Nossa Missão",
+      "content": "Democratizar o acesso a ferramentas técnicas de SEO e AIO (AI Optimization) para desenvolvedores, criadores de conteúdo e profissionais de marketing. Acreditamos que boas ferramentas devem ser acessíveis a todos, independente do orçamento."
+    },
+    "cta": "Explorar Ferramentas"
+  },
+  "privacy": {
+    "metaTitle": "Política de Privacidade e Termos de Uso | SeoLayer Studio",
+    "metaDescription": "Nossa política de privacidade explica como processamos dados localmente e nosso compromisso com sua segurança.",
+    "title": "Política de Privacidade e Termos de Uso",
+    "lastUpdated": "Última atualização",
+    "intro": "O SeoLayer Studio está comprometido com a proteção da sua privacidade. Esta política descreve como nossas ferramentas funcionam e como tratamos seus dados.",
+    "dataProcessing": {
+      "title": "Processamento de Dados",
+      "content": "Todas as ferramentas do SeoLayer Studio funcionam via Client-Side Scripting (JavaScript no navegador). Isso significa que nenhum dado inserido nas ferramentas é enviado ou armazenado em nossos servidores.\n\nSeus textos, imagens, URLs e qualquer outro dado que você inserir são processados exclusivamente no seu dispositivo. Não temos acesso a essas informações."
+    },
+    "cookies": {
+      "title": "Cookies e Anúncios",
+      "content": "Utilizamos o Google AdSense para exibir anúncios em nosso site. O Google pode usar cookies para personalizar os anúncios com base no seu histórico de navegação.\n\nVocê pode gerenciar suas preferências de anúncios nas configurações de anúncios do Google ou optar por não participar da publicidade personalizada."
+    },
+    "localStorage": {
+      "title": "Armazenamento Local (LocalStorage)",
+      "content": "Usamos o LocalStorage do navegador apenas para conveniência do usuário, salvando o progresso das ferramentas para que você possa continuar de onde parou.\n\nEsses dados são armazenados apenas no seu dispositivo e podem ser limpos a qualquer momento:\n• Usando o botão 'Limpar Dados' disponível em cada ferramenta\n• Limpando o cache do navegador\n• Usando o modo de navegação privada"
+    },
+    "disclaimer": {
+      "title": "Isenção de Responsabilidade",
+      "content": "O uso das ferramentas do SeoLayer Studio é por conta e risco do usuário. Não garantimos resultados específicos de ranking no Google ou qualquer outro mecanismo de busca.\n\nEmbora sigamos as melhores práticas recomendadas pelo Google e pela indústria de SEO, os resultados podem variar dependendo de diversos fatores fora do nosso controle."
+    },
+    "googlePrivacy": "Para mais informações sobre como o Google utiliza dados:",
+    "contact": "Dúvidas sobre nossa política de privacidade? Entre em contato através do nosso site."
   }
 }
