@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useParams } from 'react-router-dom';
 import { BookOpen } from 'lucide-react';
 import { ToolLayout } from '@/components/ToolLayout';
 import { ClearDataButton } from '@/components/ClearDataButton';
@@ -45,7 +46,8 @@ function getReadingLevel(score: number, t: (key: string) => string): string {
 
 export default function ReadabilityAnalyzer() {
   const { t } = useTranslation();
-  const [text, setText, clearText] = useLocalStorage('readability-analyzer-text', '');
+  const { lang } = useParams<{ lang: string }>();
+  const [text, setText, clearText] = useLocalStorage(`readability-analyzer_${lang || 'en'}`, '');
 
   const metrics = useMemo((): ReadabilityMetrics | null => {
     if (!text.trim()) return null;

@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useParams } from 'react-router-dom';
 import { Sparkles } from 'lucide-react';
 import { ToolLayout } from '@/components/ToolLayout';
 import { ClearDataButton } from '@/components/ClearDataButton';
@@ -12,7 +13,8 @@ import { useLocalStorage } from '@/hooks/useLocalStorage';
 
 export default function LsiKeywords() {
   const { t } = useTranslation();
-  const [text, setText, clearText] = useLocalStorage('lsi-keywords-text', '');
+  const { lang } = useParams<{ lang: string }>();
+  const [text, setText, clearText] = useLocalStorage(`lsi-keywords_${lang || 'en'}`, '');
 
   const lsiKeywords = useMemo(() => {
     if (!text.trim()) return [];

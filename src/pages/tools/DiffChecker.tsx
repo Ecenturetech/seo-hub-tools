@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useParams } from 'react-router-dom';
 import { FileText } from 'lucide-react';
 import { ToolLayout } from '@/components/ToolLayout';
 import { ClearDataButton } from '@/components/ClearDataButton';
@@ -18,8 +19,10 @@ interface DiffLine {
 
 export default function DiffChecker() {
   const { t } = useTranslation();
-  const [text1, setText1, clearText1] = useLocalStorage('diff-checker-text1', '');
-  const [text2, setText2, clearText2] = useLocalStorage('diff-checker-text2', '');
+  const { lang } = useParams<{ lang: string }>();
+  const storageKey = `diff-checker_${lang || 'en'}`;
+  const [text1, setText1, clearText1] = useLocalStorage(`${storageKey}_text1`, '');
+  const [text2, setText2, clearText2] = useLocalStorage(`${storageKey}_text2`, '');
 
   const handleClear = () => {
     clearText1();

@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useParams } from 'react-router-dom';
 import { ClipboardCheck, Check } from 'lucide-react';
 import { ToolLayout } from '@/components/ToolLayout';
 import { ClearDataButton } from '@/components/ClearDataButton';
@@ -42,8 +43,9 @@ const technicalItems: ChecklistItem[] = [
 
 export default function SeoChecklist() {
   const { t } = useTranslation();
+  const { lang } = useParams<{ lang: string }>();
   const [checkedItems, setCheckedItems, clearChecked] = useLocalStorage<string[]>(
-    'seo-checklist-items',
+    `seo-checklist_${lang || 'en'}`,
     []
   );
 

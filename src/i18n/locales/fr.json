@@ -166,6 +166,38 @@
       "contentPlaceholder": "logolink, textlink"
     }
   },
+  "categories": {
+    "content": "Contenu",
+    "technical": "Technique",
+    "image": "Optimisation d'Image",
+    "aio": "AI Optimization (AIO)"
+  },
+  "tools": {
+    "altTextGenerator": {
+      "name": "Générateur d'Alt Text IA",
+      "description": "Générez des attributs alt sémantiques optimisés pour la vision par ordinateur",
+      "metaTitle": "Générateur d'Alt Text IA: Optimisation Sémantique",
+      "metaDescription": "Créez des attributs alt sémantiques que les IA comme Gemini et GPT-4V utilisent pour comprendre le contexte visuel."
+    },
+    "llmsTxtGenerator": {
+      "name": "Générateur de LLMS.txt",
+      "description": "Créez le fichier llms.txt - le robots.txt pour les crawlers IA",
+      "metaTitle": "Générateur de LLMS.txt: Le Robots.txt pour IA",
+      "metaDescription": "Générez le fichier llms.txt qui fournit un résumé structuré pour que les modèles de langage citent votre site."
+    },
+    "entityBuilder": {
+      "name": "Constructeur de Graphe d'Entités",
+      "description": "Suggère des entités liées pour renforcer votre Knowledge Graph",
+      "metaTitle": "Constructeur de Graphe d'Entités: SEO Sémantique",
+      "metaDescription": "Construisez des graphes de connaissances avec des entités liées pour renforcer votre contenu sémantique."
+    },
+    "speakableSchema": {
+      "name": "Générateur Schema Speakable & SGE",
+      "description": "Générez du JSON-LD pour la recherche vocale et Search Generative Experience",
+      "metaTitle": "Générateur Schema Speakable & SGE: Optimisez pour la Voix et l'IA",
+      "metaDescription": "Créez du schema JSON-LD pour Google Assistant et SGE. Identifiez les parties importantes pour la lecture vocale."
+    }
+  },
   "footer": {
     "madeWith": "Fait avec",
     "for": "pour les professionnels du SEO"

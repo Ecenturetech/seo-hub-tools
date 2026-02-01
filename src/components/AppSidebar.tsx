@@ -22,6 +22,9 @@ import {
   ClipboardCheck,
   Mail,
   BookOpen,
+  Bot,
+  Network,
+  Mic,
 } from 'lucide-react';
 import { useState } from 'react';
 import { Button } from './ui/button';
@@ -44,6 +47,10 @@ const toolIcons: Record<ToolId, React.ElementType> = {
   'email-obfuscator': Mail,
   'diff-checker': FileText,
   'readability-analyzer': BookOpen,
+  'alt-text-generator': Image,
+  'llms-txt-generator': Bot,
+  'entity-builder': Network,
+  'speakable-schema': Mic,
 };
 
 const toolNameKeys: Record<ToolId, string> = {
@@ -63,12 +70,17 @@ const toolNameKeys: Record<ToolId, string> = {
   'email-obfuscator': 'tools.emailObfuscator.name',
   'diff-checker': 'tools.diffChecker.name',
   'readability-analyzer': 'tools.readabilityAnalyzer.name',
+  'alt-text-generator': 'tools.altTextGenerator.name',
+  'llms-txt-generator': 'tools.llmsTxtGenerator.name',
+  'entity-builder': 'tools.entityBuilder.name',
+  'speakable-schema': 'tools.speakableSchema.name',
 };
 
 const categoryLabels = {
   content: 'categories.content',
   technical: 'categories.technical',
   image: 'categories.image',
+  aio: 'categories.aio',
 } as const;
 
 export function AppSidebar() {
@@ -202,6 +214,16 @@ export function AppSidebar() {
               </span>
               <div className="mt-2 space-y-1">
                 {toolCategories.image.map(renderToolLink)}
+              </div>
+            </div>
+
+            {/* AI Optimization Category */}
+            <div className="mb-4">
+              <span className="px-3 text-xs font-semibold text-muted-foreground uppercase tracking-wider">
+                {t(categoryLabels.aio)}
+              </span>
+              <div className="mt-2 space-y-1">
+                {toolCategories.aio.map(renderToolLink)}
               </div>
             </div>
           </nav>
