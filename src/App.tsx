@@ -29,6 +29,10 @@ import FaviconSimulator from "./pages/tools/FaviconSimulator";
 import EmailObfuscator from "./pages/tools/EmailObfuscator";
 import DiffChecker from "./pages/tools/DiffChecker";
 import ReadabilityAnalyzer from "./pages/tools/ReadabilityAnalyzer";
+import AltTextGenerator from "./pages/tools/AltTextGenerator";
+import LlmsTxtGenerator from "./pages/tools/LlmsTxtGenerator";
+import EntityBuilder from "./pages/tools/EntityBuilder";
+import SpeakableSchemaGenerator from "./pages/tools/SpeakableSchemaGenerator";
 
 // Route config
 import { toolRoutes } from "@/config/routes";
@@ -65,6 +69,10 @@ const toolComponents: Record<string, React.ComponentType> = {
   'email-obfuscator': EmailObfuscator,
   'diff-checker': DiffChecker,
   'readability-analyzer': ReadabilityAnalyzer,
+  'alt-text-generator': AltTextGenerator,
+  'llms-txt-generator': LlmsTxtGenerator,
+  'entity-builder': EntityBuilder,
+  'speakable-schema': SpeakableSchemaGenerator,
 };
 
 // Component that tracks page views

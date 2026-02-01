@@ -25,7 +25,8 @@
   "categories": {
     "content": "Conteúdo",
     "technical": "Técnico",
-    "image": "Otimização de Imagem"
+    "image": "Otimização de Imagem",
+    "aio": "AI Optimization (AIO)"
   },
   "hero": {
     "title": "Seu Kit Completo de SEO",
@@ -411,6 +412,112 @@
         "whyImportantTitle": "Por que é importante para SEO",
         "whyImportant": "Textos mais fáceis de ler têm menor taxa de rejeição e maior tempo de permanência na página - ambos sinais positivos para o Google. Um score acima de 60 é ideal para a maioria do conteúdo web.",
         "goldenTip": "Use frases curtas (máximo 20 palavras) e evite jargões técnicos desnecessários para melhorar a legibilidade."
+      }
+    },
+    "altTextGenerator": {
+      "name": "Gerador de Alt Text com IA",
+      "description": "Gere atributos alt semânticos otimizados para visão computacional",
+      "metaTitle": "Gerador de Alt Text com IA: Otimização Semântica",
+      "metaDescription": "Crie atributos alt semânticos que IAs como Gemini e GPT-4V usam para entender contexto visual. Aumente suas chances em respostas de IA.",
+      "inputTitle": "Descreva sua Imagem",
+      "mainObject": "Objeto Principal",
+      "mainObjectPlaceholder": "ex: Uma mulher sorrindo usando laptop",
+      "sceneContext": "Contexto da Cena",
+      "sceneContextPlaceholder": "ex: em um café moderno com plantas ao fundo",
+      "imageIntent": "Intenção da Imagem",
+      "imageIntentPlaceholder": "ex: demonstrar trabalho remoto produtivo",
+      "resultTitle": "Alt Text Gerado",
+      "emptyState": "Preencha os campos para gerar o alt text semântico.",
+      "aiNote": "IAs como Gemini e GPT-4V usam atributos ALT para entender contexto visual. Este texto foi otimizado para maximizar suas chances de aparecer em respostas geradas por IA.",
+      "content": {
+        "title": "Alt Text Otimizado para IA",
+        "howToUseTitle": "Como usar",
+        "howToUse": "Descreva o objeto principal, o contexto da cena e a intenção da imagem. A ferramenta gerará um alt text semântico otimizado para modelos de linguagem visual.",
+        "whyImportantTitle": "Por que é importante para SEO",
+        "whyImportant": "Com a ascensão de buscas baseadas em IA, atributos alt semânticos aumentam suas chances de aparecer em respostas geradas por modelos como GPT-4V e Google Gemini.",
+        "goldenTip": "Inclua sempre o contexto emocional ou funcional da imagem - IAs entendem intenção, não apenas objetos."
+      }
+    },
+    "llmsTxtGenerator": {
+      "name": "Gerador de LLMS.txt",
+      "description": "Crie o arquivo llms.txt - o robots.txt para crawlers de IA",
+      "metaTitle": "Gerador de LLMS.txt: O Robots.txt para IA",
+      "metaDescription": "Gere o arquivo llms.txt que fornece um resumo estruturado para que modelos de linguagem citem seu site com precisão.",
+      "inputTitle": "Informações da Marca",
+      "brandName": "Nome da Marca",
+      "brandNamePlaceholder": "ex: SeoLayer Studio",
+      "brandSummary": "Resumo da Marca",
+      "brandSummaryPlaceholder": "Descreva brevemente o que sua empresa faz e seu propósito principal...",
+      "criticalInfo": "Informações Críticas",
+      "criticalInfoPlaceholder": "Fatos importantes que a IA deve saber sobre sua marca...",
+      "mainLinks": "Links Principais",
+      "mainLinksPlaceholder": "https://seusite.com/sobre\nhttps://seusite.com/produtos\nhttps://seusite.com/contato",
+      "contactInfo": "Informações de Contato",
+      "contactInfoPlaceholder": "email@empresa.com",
+      "resultTitle": "Arquivo LLMS.txt",
+      "aiNote": "O arquivo llms.txt é a nova fronteira do SEO. Ele fornece um resumo limpo e estruturado para que modelos de linguagem citem seu site com precisão.",
+      "content": {
+        "title": "O que é o arquivo LLMS.txt?",
+        "howToUseTitle": "Como usar",
+        "howToUse": "Preencha as informações da sua marca, incluindo resumo, informações críticas e links principais. Baixe o arquivo e coloque-o na raiz do seu site.",
+        "whyImportantTitle": "Por que é importante para SEO",
+        "whyImportant": "Modelos de linguagem como ChatGPT e Claude buscam informações para responder perguntas. O llms.txt garante que sua marca seja citada corretamente.",
+        "goldenTip": "Mantenha o resumo da marca conciso e factual - evite linguagem de marketing exagerada que pode parecer pouco confiável para IAs."
+      }
+    },
+    "entityBuilder": {
+      "name": "Construtor de Grafo de Entidades",
+      "description": "Sugere entidades relacionadas para fortalecer seu Knowledge Graph",
+      "metaTitle": "Construtor de Grafo de Entidades: SEO Semântico",
+      "metaDescription": "Construa grafos de conhecimento com entidades relacionadas (Pessoas, Lugares, Conceitos) para fortalecer seu conteúdo semântico.",
+      "inputTitle": "Seu Tópico",
+      "topic": "Tópico Principal",
+      "topicPlaceholder": "ex: Marketing Digital, Inteligência Artificial, Sustentabilidade",
+      "legend": "Tipos de Entidades",
+      "types": {
+        "person": "Pessoa",
+        "place": "Lugar",
+        "concept": "Conceito",
+        "organization": "Organização",
+        "event": "Evento"
+      },
+      "resultTitle": "Entidades Sugeridas",
+      "emptyState": "Digite um tópico para sugerir entidades relacionadas.",
+      "aiNote": "Buscas modernas são baseadas em entidades, não apenas palavras-chave. Use estas entidades para garantir que seu conteúdo cubra todo o tópico esperado pelos algoritmos de IA.",
+      "content": {
+        "title": "O que é um Grafo de Conhecimento?",
+        "howToUseTitle": "Como usar",
+        "howToUse": "Digite um tópico e a ferramenta sugerirá entidades semânticas relacionadas categorizadas por tipo (pessoa, lugar, conceito, etc.). Use-as no seu conteúdo.",
+        "whyImportantTitle": "Por que é importante para SEO",
+        "whyImportant": "O Google e outras IAs entendem conteúdo através de entidades e suas relações. Cobrir entidades relacionadas aumenta a autoridade tópica do seu conteúdo.",
+        "goldenTip": "Mencione pelo menos 5-7 entidades relacionadas naturalmente ao longo do texto para maximizar a cobertura semântica."
+      }
+    },
+    "speakableSchema": {
+      "name": "Gerador Schema Speakable & SGE",
+      "description": "Gere JSON-LD para buscas por voz e Search Generative Experience",
+      "metaTitle": "Gerador Schema Speakable & SGE: Otimize para Voz e IA",
+      "metaDescription": "Crie schema JSON-LD para Google Assistant e SGE. Identifique partes importantes para leitura em voz alta por IA.",
+      "inputTitle": "Informações da Página",
+      "pageUrl": "URL da Página",
+      "pageTitle": "Título da Página",
+      "pageTitlePlaceholder": "ex: Guia Completo de SEO para 2026",
+      "headline": "Título para Leitura em Voz Alta",
+      "headlinePlaceholder": "Um título conciso otimizado para leitura por voz",
+      "summary": "Resumo para Voz/SGE",
+      "summaryPlaceholder": "Um resumo breve e claro que pode ser lido em voz alta pelo Google Assistant...",
+      "summaryTip": "Mantenha entre 50-100 palavras para leitura ideal",
+      "cssSelectors": "Seletores CSS (Speakable)",
+      "speakableTitle": "Schema Speakable (Google Assistant)",
+      "sgeTitle": "Schema SGE (Search Generative Experience)",
+      "aiNote": "Otimize para buscas por voz e resumos do SGE. Este código permite que a IA identifique as partes mais importantes para leitura em voz alta.",
+      "content": {
+        "title": "O que é Schema Speakable?",
+        "howToUseTitle": "Como usar",
+        "howToUse": "Preencha a URL, título e resumo da página. Adicione os seletores CSS que identificam o conteúdo speakable. Copie os schemas gerados para o head do seu HTML.",
+        "whyImportantTitle": "Por que é importante para SEO",
+        "whyImportant": "Buscas por voz e SGE estão crescendo rapidamente. O schema speakable ajuda o Google a identificar qual conteúdo deve ser lido em voz alta.",
+        "goldenTip": "Escreva o resumo como se fosse uma resposta de rádio - claro, conciso e sem referências visuais."
       }
     }
   },

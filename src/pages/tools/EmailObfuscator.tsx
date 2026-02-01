@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useParams } from 'react-router-dom';
 import { Mail, Copy, Check } from 'lucide-react';
 import { ToolLayout } from '@/components/ToolLayout';
 import { ClearDataButton } from '@/components/ClearDataButton';
@@ -15,7 +16,8 @@ import { useToast } from '@/hooks/use-toast';
 export default function EmailObfuscator() {
   const { t } = useTranslation();
   const { toast } = useToast();
-  const [email, setEmail, clearEmail] = useLocalStorage('email-obfuscator-email', '');
+  const { lang } = useParams<{ lang: string }>();
+  const [email, setEmail, clearEmail] = useLocalStorage(`email-obfuscator_${lang || 'en'}`, '');
   const [copied, setCopied] = useState<string | null>(null);
 
   const obfuscations = useMemo(() => {

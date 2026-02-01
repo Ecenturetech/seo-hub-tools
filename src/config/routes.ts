@@ -60,7 +60,6 @@ export const toolRoutes = {
     es: 'generador-utm',
     fr: 'generateur-utm',
   },
-  // New tools
   'lsi-keywords': {
     en: 'lsi-keywords-extractor',
     pt: 'extrator-keywords-lsi',
@@ -97,6 +96,31 @@ export const toolRoutes = {
     es: 'analizador-legibilidad',
     fr: 'analyseur-lisibilite',
   },
+  // AI Optimization (AIO) Tools
+  'alt-text-generator': {
+    en: 'ai-alt-text-generator',
+    pt: 'gerador-alt-text-ia',
+    es: 'generador-alt-text-ia',
+    fr: 'generateur-alt-text-ia',
+  },
+  'llms-txt-generator': {
+    en: 'llms-txt-generator',
+    pt: 'gerador-llms-txt',
+    es: 'generador-llms-txt',
+    fr: 'generateur-llms-txt',
+  },
+  'entity-builder': {
+    en: 'entity-knowledge-graph-builder',
+    pt: 'construtor-grafo-entidades',
+    es: 'constructor-grafo-entidades',
+    fr: 'constructeur-graphe-entites',
+  },
+  'speakable-schema': {
+    en: 'speakable-sge-schema-generator',
+    pt: 'gerador-schema-speakable-sge',
+    es: 'generador-schema-speakable-sge',
+    fr: 'generateur-schema-speakable-sge',
+  },
 } as const;
 
 export type ToolId = keyof typeof toolRoutes;
@@ -107,6 +131,7 @@ export const toolCategories = {
   content: ['word-counter', 'lsi-keywords', 'readability-analyzer', 'diff-checker'] as ToolId[],
   technical: ['serp-simulator', 'schema-generator', 'robots-generator', 'sitemap-generator', 'hreflang-generator', 'link-validator', 'utm-generator', 'seo-checklist', 'email-obfuscator'] as ToolId[],
   image: ['webp-converter', 'favicon-simulator'] as ToolId[],
+  aio: ['alt-text-generator', 'llms-txt-generator', 'entity-builder', 'speakable-schema'] as ToolId[],
 };
 
 // Get localized path for a tool

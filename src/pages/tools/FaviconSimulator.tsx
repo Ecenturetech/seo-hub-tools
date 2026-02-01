@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useParams } from 'react-router-dom';
 import { Image, Upload } from 'lucide-react';
 import { ToolLayout } from '@/components/ToolLayout';
 import { ClearDataButton } from '@/components/ClearDataButton';
@@ -11,7 +12,8 @@ import { useLocalStorage } from '@/hooks/useLocalStorage';
 
 export default function FaviconSimulator() {
   const { t } = useTranslation();
-  const [siteTitle, setSiteTitle, clearTitle] = useLocalStorage('favicon-sim-title', '');
+  const { lang } = useParams<{ lang: string }>();
+  const [siteTitle, setSiteTitle, clearTitle] = useLocalStorage(`favicon-sim_${lang || 'en'}`, '');
   const [faviconUrl, setFaviconUrl] = useState<string>('');
   const fileInputRef = useRef<HTMLInputElement>(null);
 

@@ -15,6 +15,9 @@ import {
   ClipboardCheck,
   Mail,
   BookOpen,
+  Bot,
+  Network,
+  Mic,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { AdBanner } from '@/components/AdBanner';
@@ -37,6 +40,10 @@ const toolIcons: Record<ToolId, React.ElementType> = {
   'email-obfuscator': Mail,
   'diff-checker': FileText,
   'readability-analyzer': BookOpen,
+  'alt-text-generator': Image,
+  'llms-txt-generator': Bot,
+  'entity-builder': Network,
+  'speakable-schema': Mic,
 };
 
 const toolNameKeys: Record<ToolId, string> = {
@@ -56,6 +63,10 @@ const toolNameKeys: Record<ToolId, string> = {
   'email-obfuscator': 'tools.emailObfuscator',
   'diff-checker': 'tools.diffChecker',
   'readability-analyzer': 'tools.readabilityAnalyzer',
+  'alt-text-generator': 'tools.altTextGenerator',
+  'llms-txt-generator': 'tools.llmsTxtGenerator',
+  'entity-builder': 'tools.entityBuilder',
+  'speakable-schema': 'tools.speakableSchema',
 };
 
 const toolColors: Record<ToolId, string> = {
@@ -75,6 +86,10 @@ const toolColors: Record<ToolId, string> = {
   'email-obfuscator': 'from-rose-500 to-pink-600',
   'diff-checker': 'from-slate-500 to-gray-600',
   'readability-analyzer': 'from-green-500 to-lime-600',
+  'alt-text-generator': 'from-fuchsia-500 to-pink-600',
+  'llms-txt-generator': 'from-cyan-500 to-blue-600',
+  'entity-builder': 'from-violet-500 to-indigo-600',
+  'speakable-schema': 'from-rose-500 to-orange-600',
 };
 
 export default function Index() {
@@ -134,7 +149,7 @@ export default function Index() {
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6 animate-fade-in">
             <Sparkles className="h-4 w-4" />
-            <span>16 {t('common.tools')} • 4 Languages</span>
+            <span>20 {t('common.tools')} • 4 Languages</span>
           </div>
 
           <h1 className="text-4xl lg:text-6xl font-bold mb-6 animate-slide-up-lcp">
@@ -168,6 +183,8 @@ export default function Index() {
           {renderCategory('categories.technical', toolCategories.technical)}
           
           {renderCategory('categories.image', toolCategories.image)}
+          
+          {renderCategory('categories.aio', toolCategories.aio)}
         </div>
       </section>
 

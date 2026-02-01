@@ -166,6 +166,38 @@
       "contentPlaceholder": "logolink, textlink"
     }
   },
+  "categories": {
+    "content": "Contenido",
+    "technical": "Técnico",
+    "image": "Optimización de Imagen",
+    "aio": "AI Optimization (AIO)"
+  },
+  "tools": {
+    "altTextGenerator": {
+      "name": "Generador de Alt Text con IA",
+      "description": "Genera atributos alt semánticos optimizados para visión computacional",
+      "metaTitle": "Generador de Alt Text con IA: Optimización Semántica",
+      "metaDescription": "Crea atributos alt semánticos que IAs como Gemini y GPT-4V usan para entender contexto visual."
+    },
+    "llmsTxtGenerator": {
+      "name": "Generador de LLMS.txt",
+      "description": "Crea el archivo llms.txt - el robots.txt para crawlers de IA",
+      "metaTitle": "Generador de LLMS.txt: El Robots.txt para IA",
+      "metaDescription": "Genera el archivo llms.txt que proporciona un resumen estructurado para que modelos de lenguaje citen tu sitio."
+    },
+    "entityBuilder": {
+      "name": "Constructor de Grafo de Entidades",
+      "description": "Sugiere entidades relacionadas para fortalecer tu Knowledge Graph",
+      "metaTitle": "Constructor de Grafo de Entidades: SEO Semántico",
+      "metaDescription": "Construye grafos de conocimiento con entidades relacionadas para fortalecer tu contenido semántico."
+    },
+    "speakableSchema": {
+      "name": "Generador Schema Speakable & SGE",
+      "description": "Genera JSON-LD para búsquedas por voz y Search Generative Experience",
+      "metaTitle": "Generador Schema Speakable & SGE: Optimiza para Voz e IA",
+      "metaDescription": "Crea schema JSON-LD para Google Assistant y SGE. Identifica partes importantes para lectura por voz."
+    }
+  },
   "footer": {
     "madeWith": "Hecho con",
     "for": "para profesionales de SEO"

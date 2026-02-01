@@ -119,4 +119,30 @@
   <url><loc>https://seolayerstudio.com/es/generador-utm</loc><priority>0.6</priority></url>
   <url><loc>https://seolayerstudio.com/fr/generateur-utm</loc><priority>0.6</priority></url>
 
+  <!-- AI Optimization (AIO) Tools -->
+  
+  <!-- AI Alt Text Generator -->
+  <url><loc>https://seolayerstudio.com/en/ai-alt-text-generator</loc><priority>0.8</priority></url>
+  <url><loc>https://seolayerstudio.com/pt/gerador-alt-text-ia</loc><priority>0.8</priority></url>
+  <url><loc>https://seolayerstudio.com/es/generador-alt-text-ia</loc><priority>0.8</priority></url>
+  <url><loc>https://seolayerstudio.com/fr/generateur-alt-text-ia</loc><priority>0.8</priority></url>
+
+  <!-- LLMS.txt Generator -->
+  <url><loc>https://seolayerstudio.com/en/llms-txt-generator</loc><priority>0.8</priority></url>
+  <url><loc>https://seolayerstudio.com/pt/gerador-llms-txt</loc><priority>0.8</priority></url>
+  <url><loc>https://seolayerstudio.com/es/generador-llms-txt</loc><priority>0.8</priority></url>
+  <url><loc>https://seolayerstudio.com/fr/generateur-llms-txt</loc><priority>0.8</priority></url>
+
+  <!-- Entity & Knowledge Graph Builder -->
+  <url><loc>https://seolayerstudio.com/en/entity-knowledge-graph-builder</loc><priority>0.8</priority></url>
+  <url><loc>https://seolayerstudio.com/pt/construtor-grafo-entidades</loc><priority>0.8</priority></url>
+  <url><loc>https://seolayerstudio.com/es/constructor-grafo-entidades</loc><priority>0.8</priority></url>
+  <url><loc>https://seolayerstudio.com/fr/constructeur-graphe-entites</loc><priority>0.8</priority></url>
+
+  <!-- Speakable & SGE Schema Generator -->
+  <url><loc>https://seolayerstudio.com/en/speakable-sge-schema-generator</loc><priority>0.8</priority></url>
+  <url><loc>https://seolayerstudio.com/pt/gerador-schema-speakable-sge</loc><priority>0.8</priority></url>
+  <url><loc>https://seolayerstudio.com/es/generador-schema-speakable-sge</loc><priority>0.8</priority></url>
+  <url><loc>https://seolayerstudio.com/fr/generateur-schema-speakable-sge</loc><priority>0.8</priority></url>
+
 </urlset>
