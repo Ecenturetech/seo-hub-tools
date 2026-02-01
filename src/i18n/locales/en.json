@@ -16,11 +16,20 @@
     "characters": "characters",
     "words": "words",
     "backToHome": "Back to Home",
-    "adPlaceholder": "Advertisement Space"
+    "adPlaceholder": "Advertisement Space",
+    "goldenTip": "💡 Golden Tip",
+    "clearData": "Clear Data",
+    "dataCleared": "Data Cleared",
+    "dataClearedDescription": "All data from this tool has been removed."
+  },
+  "categories": {
+    "content": "Content",
+    "technical": "Technical",
+    "image": "Image Optimization"
   },
   "hero": {
     "title": "Your Complete SEO Toolkit",
-    "subtitle": "10 powerful client-side tools to optimize your website's search engine performance. Fast, free, and privacy-focused.",
+    "subtitle": "16 powerful client-side tools to optimize your website's search engine performance. Fast, free, and privacy-focused.",
     "cta": "Explore Tools"
   },
   "tools": {
@@ -36,7 +45,15 @@
       "url": "Display URL",
       "urlPlaceholder": "https://example.com/page",
       "titleLimit": "Recommended: 50-60 characters",
-      "descLimit": "Recommended: 150-160 characters"
+      "descLimit": "Recommended: 150-160 characters",
+      "content": {
+        "title": "What is a SERP Simulator?",
+        "howToUseTitle": "How to Use",
+        "howToUse": "Enter your page title, meta description, and URL in the fields above. The real-time preview shows exactly how your result will appear on Google. Use the character indicators to ensure your content won't be truncated.",
+        "whyImportantTitle": "Why It's Important for SEO",
+        "whyImportant": "Your search result appearance directly impacts click-through rate (CTR). An attractive title and persuasive meta description can significantly increase organic traffic, even without ranking position changes.",
+        "goldenTip": "Use numbers, questions, or action words in your title to boost CTR. Examples: '7 Essential Tips...' or 'How to Increase...' work great."
+      }
     },
     "schemaGenerator": {
       "name": "Schema JSON-LD Generator",
@@ -53,7 +70,15 @@
       "articleTitle": "Article Title",
       "articleAuthor": "Author",
       "articleDate": "Publish Date",
-      "articleImage": "Image URL"
+      "articleImage": "Image URL",
+      "content": {
+        "title": "What is Schema Markup?",
+        "howToUseTitle": "How to Use",
+        "howToUse": "Select the schema type (Local Business or Article) and fill in the relevant fields. The JSON-LD code will be generated automatically. Copy and paste it into your HTML <head> section.",
+        "whyImportantTitle": "Why It's Important for SEO",
+        "whyImportant": "Structured data helps search engines better understand your content, enabling rich snippets like star ratings, prices, and contact information directly in search results.",
+        "goldenTip": "Always test your schema using Google's Rich Results Test before publishing to ensure it's working correctly."
+      }
     },
     "robotsGenerator": {
       "name": "Robots.txt Generator",
@@ -70,7 +95,15 @@
       "disallowPrivate": "Block /private/",
       "disallowApi": "Block /api/",
       "sitemapUrl": "Sitemap URL",
-      "crawlDelay": "Crawl Delay (seconds)"
+      "crawlDelay": "Crawl Delay (seconds)",
+      "content": {
+        "title": "What is a Robots.txt File?",
+        "howToUseTitle": "How to Use",
+        "howToUse": "Select the desired user agent and check the blocking rules. Add your sitemap URL and configure the crawl delay if needed. The file will be generated automatically for you to copy.",
+        "whyImportantTitle": "Why It's Important for SEO",
+        "whyImportant": "The robots.txt controls which pages search engines can crawl. A well-configured file prevents sensitive content from being indexed and optimizes your site's crawl budget.",
+        "goldenTip": "Never accidentally block your CSS and JavaScript files - Google needs them to properly render your pages."
+      }
     },
     "wordCounter": {
       "name": "Word Counter & Density",
@@ -84,7 +117,15 @@
       "topKeywords": "Top Keywords",
       "keyword": "Keyword",
       "count": "Count",
-      "density": "Density"
+      "density": "Density",
+      "content": {
+        "title": "Why Count Words and Analyze Density?",
+        "howToUseTitle": "How to Use",
+        "howToUse": "Paste your text in the left field. The tool will automatically calculate total words, unique words, and show the most frequent keywords with their percentage density.",
+        "whyImportantTitle": "Why It's Important for SEO",
+        "whyImportant": "Keyword density helps avoid keyword stuffing (excessive repetition) which can result in penalties. A healthy balance is between 1-3% for your main keyword.",
+        "goldenTip": "Focus on semantic variations of your main keyword instead of repeating the same word. This creates more natural and comprehensive content."
+      }
     },
     "metaAnalyzer": {
       "name": "Meta Tags Analyzer",
@@ -97,7 +138,15 @@
       "resultDescription": "Description",
       "h1Tags": "H1 Tags",
       "ogTags": "Open Graph Tags",
-      "note": "Note: This tool simulates meta tag extraction. For actual URL analysis, a backend service would be required."
+      "note": "Note: This tool simulates meta tag extraction. For actual URL analysis, a backend service would be required.",
+      "content": {
+        "title": "What are Meta Tags?",
+        "howToUseTitle": "How to Use",
+        "howToUse": "Enter the URL of the page you want to analyze and click analyze. The tool will automatically extract all important meta tags including title, description, and Open Graph tags.",
+        "whyImportantTitle": "Why It's Important for SEO",
+        "whyImportant": "Meta tags are fundamental for on-page SEO. They inform search engines about page content and control how it appears in search results and social media.",
+        "goldenTip": "Regularly check your meta tags after content updates to ensure they're still optimized and relevant."
+      }
     },
     "sitemapGenerator": {
       "name": "Sitemap XML Generator",
@@ -109,7 +158,15 @@
       "priority": "Priority",
       "daily": "Daily",
       "weekly": "Weekly",
-      "monthly": "Monthly"
+      "monthly": "Monthly",
+      "content": {
+        "title": "What is an XML Sitemap?",
+        "howToUseTitle": "How to Use",
+        "howToUse": "List all your site's URLs (one per line), select the update frequency and priority. The tool will generate a valid XML sitemap that you can download and submit to search engines.",
+        "whyImportantTitle": "Why It's Important for SEO",
+        "whyImportant": "A sitemap helps search engines discover and index all your site's pages, especially new pages or those with few internal links.",
+        "goldenTip": "Submit your sitemap in Google Search Console and Bing Webmaster Tools to monitor your pages' indexing."
+      }
     },
     "webpConverter": {
       "name": "Image to WebP Converter",
@@ -121,7 +178,15 @@
       "quality": "Quality",
       "originalSize": "Original Size",
       "convertedSize": "WebP Size",
-      "savings": "Savings"
+      "savings": "Savings",
+      "content": {
+        "title": "What is WebP Format?",
+        "howToUseTitle": "How to Use",
+        "howToUse": "Drag an image to the upload area or click to select a file. Adjust the desired quality and download the optimized WebP version.",
+        "whyImportantTitle": "Why It's Important for SEO",
+        "whyImportant": "WebP images are up to 30% smaller than JPG and PNG, improving page loading speed - an important ranking factor for Google.",
+        "goldenTip": "Use WebP with fallback for older browsers using the HTML5 <picture> tag for maximum compatibility."
+      }
     },
     "hreflangGenerator": {
       "name": "Hreflang Tags Generator",
@@ -133,7 +198,15 @@
       "addLanguage": "Add Language",
       "languageCode": "Language Code",
       "url": "URL",
-      "xDefault": "x-default (fallback)"
+      "xDefault": "x-default (fallback)",
+      "content": {
+        "title": "What are Hreflang Tags?",
+        "howToUseTitle": "How to Use",
+        "howToUse": "Add the base URL and all language versions of your site. The tool will automatically generate the correct hreflang tags for each page.",
+        "whyImportantTitle": "Why It's Important for SEO",
+        "whyImportant": "Hreflang tags tell search engines which language version to show to each user, avoiding duplicate content issues on multilingual sites.",
+        "goldenTip": "Always include an x-default tag for users whose language isn't available on your site."
+      }
     },
     "linkValidator": {
       "name": "Link Validator",
@@ -145,7 +218,15 @@
       "domainPlaceholder": "example.com",
       "internalLinks": "Internal Links",
       "externalLinks": "External Links",
-      "totalLinks": "Total Links Found"
+      "totalLinks": "Total Links Found",
+      "content": {
+        "title": "Why Validate Your Links?",
+        "howToUseTitle": "How to Use",
+        "howToUse": "Paste your page's HTML code and enter your domain. The tool will identify and categorize all links as internal or external.",
+        "whyImportantTitle": "Why It's Important for SEO",
+        "whyImportant": "A good internal link structure distributes authority among your pages, while external links to trusted sites increase your content's credibility.",
+        "goldenTip": "Regularly check for broken links (404) that hurt user experience and SEO."
+      }
     },
     "utmGenerator": {
       "name": "UTM Link Generator",
@@ -163,7 +244,174 @@
       "term": "Campaign Term (optional)",
       "termPlaceholder": "running+shoes",
       "content": "Campaign Content (optional)",
-      "contentPlaceholder": "logolink, textlink"
+      "contentPlaceholder": "logolink, textlink",
+      "content": {
+        "title": "What are UTM Parameters?",
+        "howToUseTitle": "How to Use",
+        "howToUse": "Fill in the destination URL and UTM parameters (source, medium, campaign). The tool will generate a complete URL with tracking parameters.",
+        "whyImportantTitle": "Why It's Important for SEO",
+        "whyImportant": "UTM parameters allow you to track the exact origin of traffic in Google Analytics, essential for measuring marketing campaign ROI.",
+        "goldenTip": "Maintain a consistent naming convention (e.g., always lowercase, underscores) to make data analysis easier."
+      }
+    },
+    "lsiKeywords": {
+      "name": "LSI Keywords Extractor",
+      "description": "Identify semantically related terms in your text",
+      "metaTitle": "LSI Keywords Extractor: Find Semantic Terms",
+      "metaDescription": "Extract LSI keywords and semantically related terms from your text. Improve your content's relevance.",
+      "inputLabel": "Your Text",
+      "placeholder": "Paste your text here to extract LSI keywords...",
+      "results": "Keywords Found",
+      "emptyState": "Enter text to extract the most frequent keywords.",
+      "content": {
+        "title": "What are LSI Keywords?",
+        "howToUseTitle": "How to Use",
+        "howToUse": "Paste a text or article in the left field. The tool will automatically analyze and extract the most frequent terms, ranked by relevance.",
+        "whyImportantTitle": "Why It's Important for SEO",
+        "whyImportant": "LSI (Latent Semantic Indexing) keywords are related terms that help search engines better understand your content's context, improving ranking for semantic searches.",
+        "goldenTip": "Use identified LSI keywords naturally throughout your text, especially in subheadings and opening paragraphs."
+      }
+    },
+    "seoChecklist": {
+      "name": "Interactive SEO Checklist",
+      "description": "Complete checklist for on-page and technical optimization",
+      "metaTitle": "Interactive SEO Checklist: On-page & Technical",
+      "metaDescription": "Use our interactive checklist to ensure your site meets all on-page and technical SEO requirements.",
+      "progress": "Progress",
+      "completed": "items completed",
+      "onPage": "On-Page SEO",
+      "technical": "Technical SEO",
+      "items": {
+        "titleTag": "Optimized title with main keyword",
+        "metaDescription": "Attractive meta description with CTA",
+        "h1Tag": "Only one H1 per page with keyword",
+        "headingStructure": "Hierarchical heading structure (H1 > H2 > H3)",
+        "keywordUsage": "Main keyword in first 100 characters",
+        "imageAlt": "All images with descriptive alt text",
+        "internalLinks": "Relevant internal links included",
+        "externalLinks": "External links to trusted sources",
+        "contentLength": "Content with at least 1000 words",
+        "readability": "Easy to read and scan text",
+        "mobileFriendly": "Responsive mobile design",
+        "pageSpeed": "Loading time < 3 seconds",
+        "sslCertificate": "HTTPS active on all pages",
+        "robotsTxt": "Robots.txt file configured",
+        "sitemapXml": "XML sitemap submitted to search engines",
+        "canonicalUrl": "Canonical tags implemented",
+        "schemaMarkup": "Structured data (Schema.org)",
+        "ogTags": "Open Graph tags for social media",
+        "noErrors": "No 404 errors or broken redirects",
+        "coreWebVitals": "Core Web Vitals optimized"
+      },
+      "content": {
+        "title": "Complete SEO Checklist",
+        "howToUseTitle": "How to Use",
+        "howToUse": "Check off each item as you optimize your page. Progress is saved automatically. Use this checklist as a guide to ensure no important SEO aspect is forgotten.",
+        "whyImportantTitle": "Why It's Important for SEO",
+        "whyImportant": "A systematic SEO approach ensures all ranking factors are considered. Many sites lose positions by neglecting basic aspects.",
+        "goldenTip": "Review this checklist for every new content published and do monthly audits on important pages."
+      }
+    },
+    "faviconSimulator": {
+      "name": "Favicon Simulator",
+      "description": "Preview how your favicon appears in browser and Google",
+      "metaTitle": "Favicon Simulator: Browser & SERP Preview",
+      "metaDescription": "See how your favicon appears in browser tabs, bookmarks, and Google Mobile search results.",
+      "siteTitle": "Site Title",
+      "titlePlaceholder": "My Website",
+      "uploadFavicon": "Upload Favicon",
+      "dropzone": "Click to upload icon",
+      "browserTab": "Browser Tab Preview",
+      "googleMobile": "Google Mobile Preview",
+      "bookmarks": "Bookmarks Preview",
+      "content": {
+        "title": "What is a Favicon?",
+        "howToUseTitle": "How to Use",
+        "howToUse": "Enter your site name and upload your favicon. See instantly how it will appear in browser tabs, bookmarks, and Google mobile search results.",
+        "whyImportantTitle": "Why It's Important for SEO",
+        "whyImportant": "A professional favicon increases brand recognition and user trust. On Google Mobile, the favicon appears in search results, impacting click-through rate.",
+        "goldenTip": "Use a simple, recognizable icon in 16x16 and 32x32 pixels. Avoid details that become invisible at small sizes."
+      }
+    },
+    "emailObfuscator": {
+      "name": "Email Obfuscator",
+      "description": "Protect your email from bots and spam",
+      "metaTitle": "Email Obfuscator: Anti-Spam Protection",
+      "metaDescription": "Convert your email to bot-protected code. Multiple obfuscation methods available.",
+      "inputLabel": "Your Email",
+      "placeholder": "your@email.com",
+      "invalidEmail": "Enter a valid email to see obfuscation options.",
+      "copiedDescription": "The code has been copied to your clipboard.",
+      "methods": {
+        "html": "HTML Entities",
+        "js": "JavaScript",
+        "css": "CSS + HTML",
+        "base64": "Base64",
+        "mailto": "Encoded Mailto",
+        "rot13": "ROT13"
+      },
+      "content": {
+        "title": "Why Obfuscate Your Email?",
+        "howToUseTitle": "How to Use",
+        "howToUse": "Enter your email and choose between different obfuscation methods. Copy the generated code and use it in your site's HTML.",
+        "whyImportantTitle": "Why It's Important for SEO",
+        "whyImportant": "Publishing plain-text emails attracts spam. Obfuscation keeps the email functional for real users while making it difficult for bots to harvest.",
+        "goldenTip": "Combine multiple methods for greater protection. The CSS method is especially effective as it visually reverses the text."
+      }
+    },
+    "diffChecker": {
+      "name": "Text Diff Checker",
+      "description": "Compare two texts and highlight differences",
+      "metaTitle": "Text Diff Checker: Compare Texts Online",
+      "metaDescription": "Compare two texts side by side and see all differences highlighted. Useful for content review.",
+      "originalText": "Original Text",
+      "modifiedText": "Modified Text",
+      "placeholder1": "Paste original text here...",
+      "placeholder2": "Paste modified text here...",
+      "result": "Comparison Result",
+      "added": "added",
+      "removed": "removed",
+      "unchanged": "unchanged",
+      "content": {
+        "title": "Text Diff Checker",
+        "howToUseTitle": "How to Use",
+        "howToUse": "Paste the original text in the left field and the modified version on the right. Differences will be automatically highlighted in green (additions) and red (removals).",
+        "whyImportantTitle": "Why It's Important for SEO",
+        "whyImportant": "Comparing content versions helps track changes, review updates, and ensure important edits aren't lost during optimization.",
+        "goldenTip": "Use this tool to compare meta descriptions before and after optimizations and measure CTR impact."
+      }
+    },
+    "readabilityAnalyzer": {
+      "name": "Readability Analyzer",
+      "description": "Calculate your text's reading ease score",
+      "metaTitle": "Readability Analyzer: Flesch Reading Ease",
+      "metaDescription": "Calculate your text's readability with the Flesch index. Optimize your content for better comprehension.",
+      "inputLabel": "Your Text",
+      "placeholder": "Paste your text here to analyze readability...",
+      "fleschScore": "Flesch Reading Ease Score",
+      "words": "Words",
+      "sentences": "Sentences",
+      "avgWords": "Words/Sentence",
+      "readingTime": "Reading Time",
+      "gradeLevel": "Grade Level",
+      "emptyState": "Enter text to analyze readability.",
+      "levels": {
+        "veryEasy": "Very Easy (5th grade)",
+        "easy": "Easy (6th grade)",
+        "fairlyEasy": "Fairly Easy (7th grade)",
+        "standard": "Standard (8th-9th grade)",
+        "fairlyDifficult": "Fairly Difficult (High School)",
+        "difficult": "Difficult (College)",
+        "veryDifficult": "Very Difficult (Graduate)"
+      },
+      "content": {
+        "title": "What is the Flesch Readability Index?",
+        "howToUseTitle": "How to Use",
+        "howToUse": "Paste your text in the left field. The tool will automatically calculate the Flesch index, word count, sentences, and estimated reading time.",
+        "whyImportantTitle": "Why It's Important for SEO",
+        "whyImportant": "Easier-to-read texts have lower bounce rates and higher time-on-page - both positive signals for Google. A score above 60 is ideal for most web content.",
+        "goldenTip": "Use short sentences (maximum 20 words) and avoid unnecessary technical jargon to improve readability."
+      }
     }
   },
   "footer": {

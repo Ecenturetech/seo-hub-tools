@@ -23,6 +23,12 @@ import WebpConverter from "./pages/tools/WebpConverter";
 import HreflangGenerator from "./pages/tools/HreflangGenerator";
 import LinkValidator from "./pages/tools/LinkValidator";
 import UtmGenerator from "./pages/tools/UtmGenerator";
+import LsiKeywords from "./pages/tools/LsiKeywords";
+import SeoChecklist from "./pages/tools/SeoChecklist";
+import FaviconSimulator from "./pages/tools/FaviconSimulator";
+import EmailObfuscator from "./pages/tools/EmailObfuscator";
+import DiffChecker from "./pages/tools/DiffChecker";
+import ReadabilityAnalyzer from "./pages/tools/ReadabilityAnalyzer";
 
 // Route config
 import { toolRoutes } from "@/config/routes";
@@ -53,6 +59,12 @@ const toolComponents: Record<string, React.ComponentType> = {
   'hreflang-generator': HreflangGenerator,
   'link-validator': LinkValidator,
   'utm-generator': UtmGenerator,
+  'lsi-keywords': LsiKeywords,
+  'seo-checklist': SeoChecklist,
+  'favicon-simulator': FaviconSimulator,
+  'email-obfuscator': EmailObfuscator,
+  'diff-checker': DiffChecker,
+  'readability-analyzer': ReadabilityAnalyzer,
 };
 
 // Component that tracks page views

@@ -4,15 +4,17 @@ import { Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import { Button } from './ui/button';
 import { AdBanner } from './AdBanner';
+import { ToolDescription } from './ToolDescription';
 
 interface ToolLayoutProps {
   children: ReactNode;
   title: string;
   description: string;
   icon: React.ElementType;
+  toolKey?: string;
 }
 
-export function ToolLayout({ children, title, description, icon: Icon }: ToolLayoutProps) {
+export function ToolLayout({ children, title, description, icon: Icon, toolKey }: ToolLayoutProps) {
   const { t } = useTranslation();
 
   return (
@@ -45,6 +47,9 @@ export function ToolLayout({ children, title, description, icon: Icon }: ToolLay
 
       {/* AdSense Banner */}
       <AdBanner className="mt-10" />
+
+      {/* Tool Description */}
+      {toolKey && <ToolDescription toolKey={toolKey} />}
     </div>
   );
 }

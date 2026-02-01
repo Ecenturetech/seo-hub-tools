@@ -16,11 +16,20 @@
     "characters": "caracteres",
     "words": "palavras",
     "backToHome": "Voltar ao Início",
-    "adPlaceholder": "Espaço para Anúncio"
+    "adPlaceholder": "Espaço para Anúncio",
+    "goldenTip": "💡 Dica de Ouro",
+    "clearData": "Limpar Dados",
+    "dataCleared": "Dados Limpos",
+    "dataClearedDescription": "Todos os dados desta ferramenta foram removidos."
+  },
+  "categories": {
+    "content": "Conteúdo",
+    "technical": "Técnico",
+    "image": "Otimização de Imagem"
   },
   "hero": {
     "title": "Seu Kit Completo de SEO",
-    "subtitle": "10 ferramentas poderosas client-side para otimizar o desempenho do seu site nos mecanismos de busca. Rápido, gratuito e focado em privacidade.",
+    "subtitle": "16 ferramentas poderosas client-side para otimizar o desempenho do seu site nos mecanismos de busca. Rápido, gratuito e focado em privacidade.",
     "cta": "Explorar Ferramentas"
   },
   "tools": {
@@ -36,7 +45,15 @@
       "url": "URL de Exibição",
       "urlPlaceholder": "https://exemplo.com/pagina",
       "titleLimit": "Recomendado: 50-60 caracteres",
-      "descLimit": "Recomendado: 150-160 caracteres"
+      "descLimit": "Recomendado: 150-160 caracteres",
+      "content": {
+        "title": "O que é um Simulador de SERP?",
+        "howToUseTitle": "Como usar",
+        "howToUse": "Digite o título, meta description e URL da sua página nos campos acima. A visualização em tempo real mostra exatamente como seu resultado aparecerá no Google. Use os indicadores de caracteres para garantir que seu conteúdo não seja cortado.",
+        "whyImportantTitle": "Por que é importante para SEO",
+        "whyImportant": "A aparência do seu resultado nos buscadores impacta diretamente a taxa de cliques (CTR). Um título atraente e uma meta description persuasiva podem aumentar significativamente o tráfego orgânico, mesmo sem mudanças na posição do ranking.",
+        "goldenTip": "Use números, perguntas ou palavras de ação no título para aumentar o CTR. Exemplo: '7 Dicas Essenciais...' ou 'Como Aumentar...' funcionam muito bem."
+      }
     },
     "schemaGenerator": {
       "name": "Gerador de Schema JSON-LD",
@@ -53,7 +70,15 @@
       "articleTitle": "Título do Artigo",
       "articleAuthor": "Autor",
       "articleDate": "Data de Publicação",
-      "articleImage": "URL da Imagem"
+      "articleImage": "URL da Imagem",
+      "content": {
+        "title": "O que é Schema Markup?",
+        "howToUseTitle": "Como usar",
+        "howToUse": "Selecione o tipo de schema (Negócio Local ou Artigo) e preencha os campos com as informações relevantes. O código JSON-LD será gerado automaticamente. Copie e cole no <head> do seu HTML.",
+        "whyImportantTitle": "Por que é importante para SEO",
+        "whyImportant": "Dados estruturados ajudam os buscadores a entender melhor seu conteúdo, possibilitando rich snippets como estrelas de avaliação, preços e informações de contato direto nos resultados de busca.",
+        "goldenTip": "Sempre teste seu schema no Google Rich Results Test antes de publicar para garantir que está funcionando corretamente."
+      }
     },
     "robotsGenerator": {
       "name": "Gerador de Robots.txt",
@@ -70,7 +95,15 @@
       "disallowPrivate": "Bloquear /private/",
       "disallowApi": "Bloquear /api/",
       "sitemapUrl": "URL do Sitemap",
-      "crawlDelay": "Atraso de Rastreamento (segundos)"
+      "crawlDelay": "Atraso de Rastreamento (segundos)",
+      "content": {
+        "title": "O que é um arquivo Robots.txt?",
+        "howToUseTitle": "Como usar",
+        "howToUse": "Selecione o user agent desejado e marque as regras de bloqueio. Adicione a URL do seu sitemap e configure o crawl delay se necessário. O arquivo será gerado automaticamente para você copiar.",
+        "whyImportantTitle": "Por que é importante para SEO",
+        "whyImportant": "O robots.txt controla quais páginas os buscadores podem rastrear. Um arquivo bem configurado evita que conteúdo sensível seja indexado e otimiza o crawl budget do seu site.",
+        "goldenTip": "Nunca bloqueie acidentalmente seus arquivos CSS e JavaScript - o Google precisa deles para renderizar suas páginas corretamente."
+      }
     },
     "wordCounter": {
       "name": "Contador de Palavras e Densidade",
@@ -84,7 +117,15 @@
       "topKeywords": "Principais Keywords",
       "keyword": "Keyword",
       "count": "Contagem",
-      "density": "Densidade"
+      "density": "Densidade",
+      "content": {
+        "title": "Por que contar palavras e analisar densidade?",
+        "howToUseTitle": "Como usar",
+        "howToUse": "Cole seu texto no campo à esquerda. A ferramenta calculará automaticamente o total de palavras, palavras únicas e mostrará as keywords mais frequentes com sua densidade percentual.",
+        "whyImportantTitle": "Por que é importante para SEO",
+        "whyImportant": "A densidade de keywords ajuda a evitar keyword stuffing (excesso de repetição) que pode resultar em penalizações. Um equilíbrio saudável fica entre 1-3% para a keyword principal.",
+        "goldenTip": "Foque em variações semânticas da sua keyword principal em vez de repetir a mesma palavra. Isso cria um conteúdo mais natural e abrangente."
+      }
     },
     "metaAnalyzer": {
       "name": "Analisador de Meta Tags",
@@ -97,7 +138,15 @@
       "resultDescription": "Descrição",
       "h1Tags": "Tags H1",
       "ogTags": "Tags Open Graph",
-      "note": "Nota: Esta ferramenta simula a extração de meta tags. Para análise real de URLs, seria necessário um serviço de backend."
+      "note": "Nota: Esta ferramenta simula a extração de meta tags. Para análise real de URLs, seria necessário um serviço de backend.",
+      "content": {
+        "title": "O que são Meta Tags?",
+        "howToUseTitle": "Como usar",
+        "howToUse": "Digite a URL da página que deseja analisar e clique em analisar. A ferramenta extrairá automaticamente todas as meta tags importantes incluindo título, descrição e tags Open Graph.",
+        "whyImportantTitle": "Por que é importante para SEO",
+        "whyImportant": "Meta tags são fundamentais para SEO on-page. Elas informam aos buscadores sobre o conteúdo da página e controlam como ela aparece nos resultados de busca e redes sociais.",
+        "goldenTip": "Verifique regularmente suas meta tags após atualizações de conteúdo para garantir que ainda estão otimizadas e relevantes."
+      }
     },
     "sitemapGenerator": {
       "name": "Gerador de Sitemap XML",
@@ -109,7 +158,15 @@
       "priority": "Prioridade",
       "daily": "Diário",
       "weekly": "Semanal",
-      "monthly": "Mensal"
+      "monthly": "Mensal",
+      "content": {
+        "title": "O que é um Sitemap XML?",
+        "howToUseTitle": "Como usar",
+        "howToUse": "Liste todas as URLs do seu site (uma por linha), selecione a frequência de atualização e a prioridade. A ferramenta gerará um sitemap XML válido que você pode baixar e enviar para os buscadores.",
+        "whyImportantTitle": "Por que é importante para SEO",
+        "whyImportant": "O sitemap ajuda os buscadores a descobrir e indexar todas as páginas do seu site, especialmente páginas novas ou que recebem poucos links internos.",
+        "goldenTip": "Submeta seu sitemap no Google Search Console e Bing Webmaster Tools para monitorar a indexação das suas páginas."
+      }
     },
     "webpConverter": {
       "name": "Conversor de Imagem para WebP",
@@ -121,7 +178,15 @@
       "quality": "Qualidade",
       "originalSize": "Tamanho Original",
       "convertedSize": "Tamanho WebP",
-      "savings": "Economia"
+      "savings": "Economia",
+      "content": {
+        "title": "O que é o formato WebP?",
+        "howToUseTitle": "Como usar",
+        "howToUse": "Arraste uma imagem para a área de upload ou clique para selecionar um arquivo. Ajuste a qualidade desejada e baixe a versão WebP otimizada.",
+        "whyImportantTitle": "Por que é importante para SEO",
+        "whyImportant": "Imagens WebP são até 30% menores que JPG e PNG, melhorando a velocidade de carregamento da página - um fator de ranqueamento importante para o Google.",
+        "goldenTip": "Use WebP com fallback para navegadores antigos usando a tag <picture> do HTML5 para máxima compatibilidade."
+      }
     },
     "hreflangGenerator": {
       "name": "Gerador de Tags Hreflang",
@@ -133,7 +198,15 @@
       "addLanguage": "Adicionar Idioma",
       "languageCode": "Código do Idioma",
       "url": "URL",
-      "xDefault": "x-default (fallback)"
+      "xDefault": "x-default (fallback)",
+      "content": {
+        "title": "O que são Tags Hreflang?",
+        "howToUseTitle": "Como usar",
+        "howToUse": "Adicione a URL base e todas as versões de idioma do seu site. A ferramenta gerará automaticamente as tags hreflang corretas para cada página.",
+        "whyImportantTitle": "Por que é importante para SEO",
+        "whyImportant": "Tags hreflang indicam aos buscadores qual versão de idioma mostrar para cada usuário, evitando problemas de conteúdo duplicado em sites multilíngues.",
+        "goldenTip": "Sempre inclua uma tag x-default para usuários cujo idioma não está disponível no seu site."
+      }
     },
     "linkValidator": {
       "name": "Validador de Links",
@@ -145,7 +218,15 @@
       "domainPlaceholder": "exemplo.com",
       "internalLinks": "Links Internos",
       "externalLinks": "Links Externos",
-      "totalLinks": "Total de Links Encontrados"
+      "totalLinks": "Total de Links Encontrados",
+      "content": {
+        "title": "Por que validar seus links?",
+        "howToUseTitle": "Como usar",
+        "howToUse": "Cole o código HTML da sua página e informe seu domínio. A ferramenta identificará e categorizará todos os links como internos ou externos.",
+        "whyImportantTitle": "Por que é importante para SEO",
+        "whyImportant": "Uma boa estrutura de links internos distribui autoridade entre suas páginas, enquanto links externos para sites confiáveis aumentam a credibilidade do seu conteúdo.",
+        "goldenTip": "Verifique regularmente se não há links quebrados (404) que prejudicam a experiência do usuário e o SEO."
+      }
     },
     "utmGenerator": {
       "name": "Gerador de Links UTM",
@@ -163,7 +244,174 @@
       "term": "Termo da Campanha (opcional)",
       "termPlaceholder": "tenis+corrida",
       "content": "Conteúdo da Campanha (opcional)",
-      "contentPlaceholder": "logolink, textlink"
+      "contentPlaceholder": "logolink, textlink",
+      "content": {
+        "title": "O que são parâmetros UTM?",
+        "howToUseTitle": "Como usar",
+        "howToUse": "Preencha a URL de destino e os parâmetros UTM (source, medium, campaign). A ferramenta gerará uma URL completa com os parâmetros de rastreamento.",
+        "whyImportantTitle": "Por que é importante para SEO",
+        "whyImportant": "Parâmetros UTM permitem rastrear a origem exata do tráfego no Google Analytics, essencial para medir o ROI das campanhas de marketing.",
+        "goldenTip": "Mantenha uma convenção de nomenclatura consistente (ex: sempre minúsculas, underscores) para facilitar a análise dos dados."
+      }
+    },
+    "lsiKeywords": {
+      "name": "Extrator de Keywords LSI",
+      "description": "Identifique termos semânticos relacionados no seu texto",
+      "metaTitle": "Extrator de Keywords LSI: Encontre Termos Semânticos",
+      "metaDescription": "Extraia keywords LSI e termos semanticamente relacionados do seu texto. Melhore a relevância do seu conteúdo.",
+      "inputLabel": "Seu Texto",
+      "placeholder": "Cole seu texto aqui para extrair keywords LSI...",
+      "results": "Keywords Encontradas",
+      "emptyState": "Digite um texto para extrair as keywords mais frequentes.",
+      "content": {
+        "title": "O que são Keywords LSI?",
+        "howToUseTitle": "Como usar",
+        "howToUse": "Cole um texto ou artigo no campo à esquerda. A ferramenta analisará automaticamente e extrairá os termos mais frequentes, classificados por relevância.",
+        "whyImportantTitle": "Por que é importante para SEO",
+        "whyImportant": "Keywords LSI (Latent Semantic Indexing) são termos relacionados que ajudam os buscadores a entender melhor o contexto do seu conteúdo, melhorando o ranqueamento para buscas semânticas.",
+        "goldenTip": "Use as keywords LSI identificadas naturalmente ao longo do texto, especialmente em subtítulos e parágrafos iniciais."
+      }
+    },
+    "seoChecklist": {
+      "name": "Checklist SEO Interativo",
+      "description": "Lista de verificação completa para otimização on-page e técnica",
+      "metaTitle": "Checklist SEO Interativo: On-page e Técnico",
+      "metaDescription": "Use nosso checklist interativo para garantir que seu site atende a todos os requisitos de SEO on-page e técnico.",
+      "progress": "Progresso",
+      "completed": "itens concluídos",
+      "onPage": "SEO On-Page",
+      "technical": "SEO Técnico",
+      "items": {
+        "titleTag": "Título otimizado com keyword principal",
+        "metaDescription": "Meta description atrativa e com CTA",
+        "h1Tag": "Apenas um H1 por página com keyword",
+        "headingStructure": "Estrutura de headings hierárquica (H1 > H2 > H3)",
+        "keywordUsage": "Keyword principal nos primeiros 100 caracteres",
+        "imageAlt": "Todas as imagens com texto alt descritivo",
+        "internalLinks": "Links internos relevantes incluídos",
+        "externalLinks": "Links externos para fontes confiáveis",
+        "contentLength": "Conteúdo com pelo menos 1000 palavras",
+        "readability": "Texto fácil de ler e escanear",
+        "mobileFriendly": "Design responsivo para mobile",
+        "pageSpeed": "Tempo de carregamento < 3 segundos",
+        "sslCertificate": "HTTPS ativo em todas as páginas",
+        "robotsTxt": "Arquivo robots.txt configurado",
+        "sitemapXml": "Sitemap XML enviado aos buscadores",
+        "canonicalUrl": "Tags canonical implementadas",
+        "schemaMarkup": "Dados estruturados (Schema.org)",
+        "ogTags": "Tags Open Graph para redes sociais",
+        "noErrors": "Sem erros 404 ou redirecionamentos quebrados",
+        "coreWebVitals": "Core Web Vitals otimizados"
+      },
+      "content": {
+        "title": "Checklist de SEO Completo",
+        "howToUseTitle": "Como usar",
+        "howToUse": "Marque cada item conforme você otimiza sua página. O progresso é salvo automaticamente. Use este checklist como guia para garantir que nenhum aspecto importante de SEO seja esquecido.",
+        "whyImportantTitle": "Por que é importante para SEO",
+        "whyImportant": "Uma abordagem sistemática de SEO garante que todos os fatores de ranqueamento sejam considerados. Muitos sites perdem posições por negligenciar aspectos básicos.",
+        "goldenTip": "Revise este checklist a cada novo conteúdo publicado e faça auditorias mensais em páginas importantes."
+      }
+    },
+    "faviconSimulator": {
+      "name": "Simulador de Favicon",
+      "description": "Visualize como seu favicon aparece no navegador e Google",
+      "metaTitle": "Simulador de Favicon: Preview no Navegador e SERP",
+      "metaDescription": "Veja como seu favicon aparece na aba do navegador, nos favoritos e nos resultados de busca do Google Mobile.",
+      "siteTitle": "Título do Site",
+      "titlePlaceholder": "Meu Site",
+      "uploadFavicon": "Upload do Favicon",
+      "dropzone": "Clique para fazer upload do ícone",
+      "browserTab": "Preview da Aba do Navegador",
+      "googleMobile": "Preview no Google Mobile",
+      "bookmarks": "Preview nos Favoritos",
+      "content": {
+        "title": "O que é um Favicon?",
+        "howToUseTitle": "Como usar",
+        "howToUse": "Digite o nome do seu site e faça upload do seu favicon. Veja instantaneamente como ele aparecerá na aba do navegador, nos favoritos e nos resultados de busca mobile do Google.",
+        "whyImportantTitle": "Por que é importante para SEO",
+        "whyImportant": "Um favicon profissional aumenta o reconhecimento da marca e a confiança do usuário. No Google Mobile, o favicon aparece nos resultados de busca, impactando a taxa de cliques.",
+        "goldenTip": "Use um ícone simples e reconhecível em 16x16 e 32x32 pixels. Evite detalhes que ficam invisíveis em tamanhos pequenos."
+      }
+    },
+    "emailObfuscator": {
+      "name": "Ofuscador de E-mail",
+      "description": "Proteja seu e-mail contra bots e spam",
+      "metaTitle": "Ofuscador de E-mail: Proteção Anti-Spam",
+      "metaDescription": "Converta seu e-mail em código protegido contra bots de spam. Múltiplos métodos de ofuscação disponíveis.",
+      "inputLabel": "Seu E-mail",
+      "placeholder": "seu@email.com",
+      "invalidEmail": "Digite um e-mail válido para ver as opções de ofuscação.",
+      "copiedDescription": "O código foi copiado para a área de transferência.",
+      "methods": {
+        "html": "Entidades HTML",
+        "js": "JavaScript",
+        "css": "CSS + HTML",
+        "base64": "Base64",
+        "mailto": "Mailto Codificado",
+        "rot13": "ROT13"
+      },
+      "content": {
+        "title": "Por que ofuscar seu e-mail?",
+        "howToUseTitle": "Como usar",
+        "howToUse": "Digite seu e-mail e escolha entre os diferentes métodos de ofuscação. Copie o código gerado e use no HTML do seu site.",
+        "whyImportantTitle": "Por que é importante para SEO",
+        "whyImportant": "Publicar e-mails em texto puro atrai spam. A ofuscação mantém o e-mail funcional para usuários reais enquanto dificulta a coleta por bots.",
+        "goldenTip": "Combine múltiplos métodos para maior proteção. O método CSS é especialmente eficaz pois inverte visualmente o texto."
+      }
+    },
+    "diffChecker": {
+      "name": "Comparador de Texto",
+      "description": "Compare dois textos e destaque as diferenças",
+      "metaTitle": "Comparador de Texto: Diff Checker Online",
+      "metaDescription": "Compare dois textos lado a lado e veja todas as diferenças destacadas. Útil para revisão de conteúdo.",
+      "originalText": "Texto Original",
+      "modifiedText": "Texto Modificado",
+      "placeholder1": "Cole o texto original aqui...",
+      "placeholder2": "Cole o texto modificado aqui...",
+      "result": "Resultado da Comparação",
+      "added": "adicionados",
+      "removed": "removidos",
+      "unchanged": "inalterados",
+      "content": {
+        "title": "Comparador de Texto Diff",
+        "howToUseTitle": "Como usar",
+        "howToUse": "Cole o texto original no campo esquerdo e a versão modificada no direito. As diferenças serão destacadas automaticamente em verde (adições) e vermelho (remoções).",
+        "whyImportantTitle": "Por que é importante para SEO",
+        "whyImportant": "Comparar versões de conteúdo ajuda a rastrear alterações, revisar atualizações e garantir que edições importantes não sejam perdidas durante a otimização.",
+        "goldenTip": "Use esta ferramenta para comparar meta descriptions antes e depois de otimizações e medir o impacto no CTR."
+      }
+    },
+    "readabilityAnalyzer": {
+      "name": "Analisador de Legibilidade",
+      "description": "Calcule o índice de facilidade de leitura do seu texto",
+      "metaTitle": "Analisador de Legibilidade: Flesch Reading Ease",
+      "metaDescription": "Calcule a legibilidade do seu texto com o índice Flesch. Otimize seu conteúdo para melhor compreensão.",
+      "inputLabel": "Seu Texto",
+      "placeholder": "Cole seu texto aqui para analisar a legibilidade...",
+      "fleschScore": "Índice Flesch Reading Ease",
+      "words": "Palavras",
+      "sentences": "Sentenças",
+      "avgWords": "Palavras/Sentença",
+      "readingTime": "Tempo de Leitura",
+      "gradeLevel": "Nível Escolar",
+      "emptyState": "Digite um texto para analisar a legibilidade.",
+      "levels": {
+        "veryEasy": "Muito Fácil (5º ano)",
+        "easy": "Fácil (6º ano)",
+        "fairlyEasy": "Relativamente Fácil (7º ano)",
+        "standard": "Padrão (8-9º ano)",
+        "fairlyDifficult": "Relativamente Difícil (Ensino Médio)",
+        "difficult": "Difícil (Universitário)",
+        "veryDifficult": "Muito Difícil (Pós-graduação)"
+      },
+      "content": {
+        "title": "O que é o Índice de Legibilidade Flesch?",
+        "howToUseTitle": "Como usar",
+        "howToUse": "Cole seu texto no campo esquerdo. A ferramenta calculará automaticamente o índice Flesch, contagem de palavras, sentenças e tempo de leitura estimado.",
+        "whyImportantTitle": "Por que é importante para SEO",
+        "whyImportant": "Textos mais fáceis de ler têm menor taxa de rejeição e maior tempo de permanência na página - ambos sinais positivos para o Google. Um score acima de 60 é ideal para a maioria do conteúdo web.",
+        "goldenTip": "Use frases curtas (máximo 20 palavras) e evite jargões técnicos desnecessários para melhorar a legibilidade."
+      }
     }
   },
   "footer": {
