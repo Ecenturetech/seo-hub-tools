@@ -145,4 +145,16 @@
   <url><loc>https://seolayerstudio.com/es/generador-schema-speakable-sge</loc><priority>0.8</priority></url>
   <url><loc>https://seolayerstudio.com/fr/generateur-schema-speakable-sge</loc><priority>0.8</priority></url>
 
+  <!-- About Pages -->
+  <url><loc>https://seolayerstudio.com/en/about</loc><priority>0.5</priority></url>
+  <url><loc>https://seolayerstudio.com/pt/about</loc><priority>0.5</priority></url>
+  <url><loc>https://seolayerstudio.com/es/about</loc><priority>0.5</priority></url>
+  <url><loc>https://seolayerstudio.com/fr/about</loc><priority>0.5</priority></url>
+
+  <!-- Privacy & Terms Pages -->
+  <url><loc>https://seolayerstudio.com/en/privacy</loc><priority>0.3</priority></url>
+  <url><loc>https://seolayerstudio.com/pt/privacy</loc><priority>0.3</priority></url>
+  <url><loc>https://seolayerstudio.com/es/privacy</loc><priority>0.3</priority></url>
+  <url><loc>https://seolayerstudio.com/fr/privacy</loc><priority>0.3</priority></url>
+
 </urlset>

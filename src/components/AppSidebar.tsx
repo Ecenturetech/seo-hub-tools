@@ -25,6 +25,8 @@ import {
   Bot,
   Network,
   Mic,
+  Info,
+  Shield,
 } from 'lucide-react';
 import { useState } from 'react';
 import { Button } from './ui/button';
@@ -230,7 +232,26 @@ export function AppSidebar() {
 
           {/* Footer */}
           <div className="p-4 border-t border-sidebar-border space-y-3">
-            <div className="flex items-center justify-between">
+            {/* About & Privacy Links */}
+            <div className="flex flex-col gap-1">
+              <Link
+                to={`/${currentLang}/about`}
+                onClick={() => setIsOpen(false)}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-sidebar-foreground hover:bg-sidebar-accent/50 transition-colors"
+              >
+                <Info className="h-4 w-4" />
+                {t('footer.about')}
+              </Link>
+              <Link
+                to={`/${currentLang}/privacy`}
+                onClick={() => setIsOpen(false)}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-sidebar-foreground hover:bg-sidebar-accent/50 transition-colors"
+              >
+                <Shield className="h-4 w-4" />
+                {t('footer.privacy')}
+              </Link>
+            </div>
+            <div className="flex items-center justify-between pt-2 border-t border-sidebar-border">
               <LanguageSelector />
               <ThemeToggle />
             </div>
