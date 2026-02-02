@@ -7,18 +7,43 @@ interface ToolContentProps {
 }
 
 export function ToolContent({ toolKey }: ToolContentProps) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  // Helper to check if a translation key exists (doesn't return the key itself)
+  const hasTranslation = (key: string): boolean => {
+    const translation = t(key);
+    return translation !== key && translation !== '';
+  };
+
+  // Helper to get translation only if it exists
+  const getTranslation = (key: string): string | null => {
+    const translation = t(key);
+    return translation !== key ? translation : null;
+  };
+
+  const contentPrefix = `tools.${toolKey}.content`;
+
+  // Check which sections are available
+  const hasIntroduction = hasTranslation(`${contentPrefix}.introduction`);
+  const hasHowToUseDetails = hasTranslation(`${contentPrefix}.howToUseDetails`);
+  const hasWhyImportantDetails = hasTranslation(`${contentPrefix}.whyImportantDetails`);
+  const hasBestPractices = hasTranslation(`${contentPrefix}.bestPracticesTitle`);
+  const hasGoldenTipDetails = hasTranslation(`${contentPrefix}.goldenTipDetails`);
+  const hasUseCases = hasTranslation(`${contentPrefix}.useCasesTitle`);
+  const hasTechnical = hasTranslation(`${contentPrefix}.technicalTitle`);
 
   return (
     <article className="mt-12 space-y-8">
       {/* Main Title */}
       <header>
         <h2 className="text-2xl font-bold text-foreground mb-4">
-          {t(`tools.${toolKey}.content.title`)}
+          {t(`${contentPrefix}.title`)}
         </h2>
-        <p className="text-muted-foreground leading-relaxed text-base">
-          {t(`tools.${toolKey}.content.introduction`)}
-        </p>
+        {hasIntroduction ? (
+          <p className="text-muted-foreground leading-relaxed text-base">
+            {t(`${contentPrefix}.introduction`)}
+          </p>
+        ) : null}
       </header>
 
       {/* How to Use Section */}
@@ -28,16 +53,18 @@ export function ToolContent({ toolKey }: ToolContentProps) {
             <BookOpen className="h-5 w-5 text-primary" />
           </div>
           <h3 className="text-xl font-semibold text-foreground">
-            {t(`tools.${toolKey}.content.howToUseTitle`)}
+            {t(`${contentPrefix}.howToUseTitle`)}
           </h3>
         </div>
         <div className="pl-12 space-y-3">
           <p className="text-muted-foreground leading-relaxed">
-            {t(`tools.${toolKey}.content.howToUse`)}
+            {t(`${contentPrefix}.howToUse`)}
           </p>
-          <p className="text-muted-foreground leading-relaxed">
-            {t(`tools.${toolKey}.content.howToUseDetails`)}
-          </p>
+          {hasHowToUseDetails && (
+            <p className="text-muted-foreground leading-relaxed">
+              {t(`${contentPrefix}.howToUseDetails`)}
+            </p>
+          )}
         </div>
       </section>
 
@@ -48,38 +75,44 @@ export function ToolContent({ toolKey }: ToolContentProps) {
             <Target className="h-5 w-5 text-primary" />
           </div>
           <h3 className="text-xl font-semibold text-foreground">
-            {t(`tools.${toolKey}.content.whyImportantTitle`)}
+            {t(`${contentPrefix}.whyImportantTitle`)}
           </h3>
         </div>
         <div className="pl-12 space-y-3">
           <p className="text-muted-foreground leading-relaxed">
-            {t(`tools.${toolKey}.content.whyImportant`)}
+            {t(`${contentPrefix}.whyImportant`)}
           </p>
-          <p className="text-muted-foreground leading-relaxed">
-            {t(`tools.${toolKey}.content.whyImportantDetails`)}
-          </p>
+          {hasWhyImportantDetails && (
+            <p className="text-muted-foreground leading-relaxed">
+              {t(`${contentPrefix}.whyImportantDetails`)}
+            </p>
+          )}
         </div>
       </section>
 
-      {/* Best Practices Section */}
-      <section className="space-y-4">
-        <div className="flex items-center gap-3">
-          <div className="p-2 rounded-lg bg-primary/10">
-            <CheckCircle2 className="h-5 w-5 text-primary" />
+      {/* Best Practices Section - only if available */}
+      {hasBestPractices && (
+        <section className="space-y-4">
+          <div className="flex items-center gap-3">
+            <div className="p-2 rounded-lg bg-primary/10">
+              <CheckCircle2 className="h-5 w-5 text-primary" />
+            </div>
+            <h3 className="text-xl font-semibold text-foreground">
+              {t(`${contentPrefix}.bestPracticesTitle`)}
+            </h3>
           </div>
-          <h3 className="text-xl font-semibold text-foreground">
-            {t(`tools.${toolKey}.content.bestPracticesTitle`)}
-          </h3>
-        </div>
-        <div className="pl-12 space-y-3">
-          <p className="text-muted-foreground leading-relaxed">
-            {t(`tools.${toolKey}.content.bestPractices`)}
-          </p>
-          <p className="text-muted-foreground leading-relaxed">
-            {t(`tools.${toolKey}.content.bestPracticesDetails`)}
-          </p>
-        </div>
-      </section>
+          <div className="pl-12 space-y-3">
+            <p className="text-muted-foreground leading-relaxed">
+              {t(`${contentPrefix}.bestPractices`)}
+            </p>
+            {hasTranslation(`${contentPrefix}.bestPracticesDetails`) && (
+              <p className="text-muted-foreground leading-relaxed">
+                {t(`${contentPrefix}.bestPracticesDetails`)}
+              </p>
+            )}
+          </div>
+        </section>
+      )}
 
       {/* Golden Tip Card */}
       <Card className="p-6 bg-primary/5 border-primary/20">
@@ -92,44 +125,54 @@ export function ToolContent({ toolKey }: ToolContentProps) {
               {t('common.goldenTip')}
             </h4>
             <p className="text-muted-foreground leading-relaxed">
-              {t(`tools.${toolKey}.content.goldenTip`)}
+              {t(`${contentPrefix}.goldenTip`)}
             </p>
-            <p className="text-muted-foreground leading-relaxed mt-2">
-              {t(`tools.${toolKey}.content.goldenTipDetails`)}
-            </p>
+            {hasGoldenTipDetails && (
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                {t(`${contentPrefix}.goldenTipDetails`)}
+              </p>
+            )}
           </div>
         </div>
       </Card>
 
-      {/* Use Cases Section */}
-      <section className="space-y-4">
-        <h3 className="text-xl font-semibold text-foreground">
-          {t(`tools.${toolKey}.content.useCasesTitle`)}
-        </h3>
-        <div className="space-y-3">
-          <p className="text-muted-foreground leading-relaxed">
-            {t(`tools.${toolKey}.content.useCases`)}
-          </p>
-          <p className="text-muted-foreground leading-relaxed">
-            {t(`tools.${toolKey}.content.useCasesDetails`)}
-          </p>
-        </div>
-      </section>
+      {/* Use Cases Section - only if available */}
+      {hasUseCases && (
+        <section className="space-y-4">
+          <h3 className="text-xl font-semibold text-foreground">
+            {t(`${contentPrefix}.useCasesTitle`)}
+          </h3>
+          <div className="space-y-3">
+            <p className="text-muted-foreground leading-relaxed">
+              {t(`${contentPrefix}.useCases`)}
+            </p>
+            {hasTranslation(`${contentPrefix}.useCasesDetails`) && (
+              <p className="text-muted-foreground leading-relaxed">
+                {t(`${contentPrefix}.useCasesDetails`)}
+              </p>
+            )}
+          </div>
+        </section>
+      )}
 
-      {/* Technical Concepts Section */}
-      <section className="space-y-4">
-        <h3 className="text-xl font-semibold text-foreground">
-          {t(`tools.${toolKey}.content.technicalTitle`)}
-        </h3>
-        <div className="space-y-3">
-          <p className="text-muted-foreground leading-relaxed">
-            {t(`tools.${toolKey}.content.technical`)}
-          </p>
-          <p className="text-muted-foreground leading-relaxed">
-            {t(`tools.${toolKey}.content.technicalDetails`)}
-          </p>
-        </div>
-      </section>
+      {/* Technical Concepts Section - only if available */}
+      {hasTechnical && (
+        <section className="space-y-4">
+          <h3 className="text-xl font-semibold text-foreground">
+            {t(`${contentPrefix}.technicalTitle`)}
+          </h3>
+          <div className="space-y-3">
+            <p className="text-muted-foreground leading-relaxed">
+              {t(`${contentPrefix}.technical`)}
+            </p>
+            {hasTranslation(`${contentPrefix}.technicalDetails`) && (
+              <p className="text-muted-foreground leading-relaxed">
+                {t(`${contentPrefix}.technicalDetails`)}
+              </p>
+            )}
+          </div>
+        </section>
+      )}
     </article>
   );
 }
