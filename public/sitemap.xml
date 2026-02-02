@@ -37,6 +37,12 @@
     <priority>1.0</priority>
   </url>
 
+  <!-- Contact Pages -->
+  <url><loc>https://seolayerstudio.com/en/contact</loc><priority>0.6</priority></url>
+  <url><loc>https://seolayerstudio.com/pt/contact</loc><priority>0.6</priority></url>
+  <url><loc>https://seolayerstudio.com/es/contact</loc><priority>0.6</priority></url>
+  <url><loc>https://seolayerstudio.com/fr/contact</loc><priority>0.6</priority></url>
+
   <!-- LSI Keywords Extractor -->
   <url><loc>https://seolayerstudio.com/en/lsi-keywords-extractor</loc><priority>0.8</priority></url>
   <url><loc>https://seolayerstudio.com/pt/extrator-keywords-lsi</loc><priority>0.8</priority></url>
