@@ -21,6 +21,7 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { AdBanner } from '@/components/AdBanner';
+import { HomeContent } from '@/components/HomeContent';
 import { toolRoutes, toolCategories, type ToolId, type LanguageCode } from '@/config/routes';
 
 const toolIcons: Record<ToolId, React.ElementType> = {
@@ -188,6 +189,9 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Rich Content Section for AdSense compliance */}
+      <HomeContent />
+
       {/* Footer */}
       <footer className="border-t py-8 px-4">
         <div className="max-w-6xl mx-auto">
@@ -195,14 +199,17 @@ export default function Index() {
             <p className="text-sm text-muted-foreground">
               {t('footer.madeWith')} ❤️ {t('footer.for')}
             </p>
-            <div className="flex items-center gap-6">
+            <nav className="flex items-center gap-6">
               <Link to={`/${currentLang}/about`} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 {t('footer.about')}
+              </Link>
+              <Link to={`/${currentLang}/contact`} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                {t('footer.contact')}
               </Link>
               <Link to={`/${currentLang}/privacy`} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 {t('footer.privacy')}
               </Link>
-            </div>
+            </nav>
           </div>
         </div>
       </footer>

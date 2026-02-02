@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import { Button } from './ui/button';
 import { AdBanner } from './AdBanner';
-import { ToolDescription } from './ToolDescription';
+import { ToolContent } from './ToolContent';
 
 interface ToolLayoutProps {
   children: ReactNode;
@@ -18,7 +18,7 @@ export function ToolLayout({ children, title, description, icon: Icon, toolKey }
   const { t } = useTranslation();
 
   return (
-    <div className="p-4 lg:p-8 max-w-5xl mx-auto">
+    <article className="p-4 lg:p-8 max-w-5xl mx-auto">
       {/* Back button - mobile only */}
       <Link to="/" className="lg:hidden">
         <Button variant="ghost" size="sm" className="mb-4">
@@ -28,7 +28,7 @@ export function ToolLayout({ children, title, description, icon: Icon, toolKey }
       </Link>
 
       {/* Header */}
-      <div className="mb-8">
+      <header className="mb-8">
         <div className="flex items-center gap-4 mb-3">
           <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center">
             <Icon className="h-6 w-6 text-primary" />
@@ -38,18 +38,18 @@ export function ToolLayout({ children, title, description, icon: Icon, toolKey }
             <p className="text-muted-foreground">{description}</p>
           </div>
         </div>
-      </div>
+      </header>
 
-      {/* Content */}
-      <div className="animate-fade-in">
+      {/* Tool Interface */}
+      <section className="animate-fade-in">
         {children}
-      </div>
+      </section>
 
       {/* AdSense Banner */}
       <AdBanner className="mt-10" />
 
-      {/* Tool Description */}
-      {toolKey && <ToolDescription toolKey={toolKey} />}
-    </div>
+      {/* Rich Content Section (400+ words for AdSense compliance) */}
+      {toolKey && <ToolContent toolKey={toolKey} />}
+    </article>
   );
 }

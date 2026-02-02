@@ -12,6 +12,7 @@ import "@/i18n";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Privacy from "./pages/Privacy";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 // Tool Pages
@@ -99,6 +100,11 @@ function AppRoutes() {
       {/* Privacy page routes */}
       {['en', 'pt', 'es', 'fr'].map((lang) => (
         <Route key={`${lang}-privacy`} path={`/${lang}/privacy`} element={<LanguageProvider lang={lang}><Privacy /></LanguageProvider>} />
+      ))}
+
+      {/* Contact page routes */}
+      {['en', 'pt', 'es', 'fr'].map((lang) => (
+        <Route key={`${lang}-contact`} path={`/${lang}/contact`} element={<LanguageProvider lang={lang}><Contact /></LanguageProvider>} />
       ))}
 
       {/* Tool routes for each language */}
