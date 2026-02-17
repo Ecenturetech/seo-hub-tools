@@ -28,6 +28,7 @@ import {
   Info,
   Shield,
   MessageSquare,
+  Newspaper,
 } from 'lucide-react';
 import { useState } from 'react';
 import { Button } from './ui/button';
@@ -235,6 +236,14 @@ export function AppSidebar() {
           <div className="p-4 border-t border-sidebar-border space-y-3">
             {/* About, Contact & Privacy Links */}
             <div className="flex flex-col gap-1">
+              <Link
+                to={`/${currentLang}/blog`}
+                onClick={() => setIsOpen(false)}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-sidebar-foreground hover:bg-sidebar-accent/50 transition-colors"
+              >
+                <Newspaper className="h-4 w-4" />
+                Blog
+              </Link>
               <Link
                 to={`/${currentLang}/about`}
                 onClick={() => setIsOpen(false)}

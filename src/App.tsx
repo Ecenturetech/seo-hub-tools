@@ -13,6 +13,8 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Privacy from "./pages/Privacy";
 import Contact from "./pages/Contact";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 import NotFound from "./pages/NotFound";
 
 // Tool Pages
@@ -105,6 +107,14 @@ function AppRoutes() {
       {/* Contact page routes */}
       {['en', 'pt', 'es', 'fr'].map((lang) => (
         <Route key={`${lang}-contact`} path={`/${lang}/contact`} element={<LanguageProvider lang={lang}><Contact /></LanguageProvider>} />
+      ))}
+
+      {/* Blog routes */}
+      {['en', 'pt', 'es', 'fr'].map((lang) => (
+        <Route key={`${lang}-blog`} path={`/${lang}/blog`} element={<LanguageProvider lang={lang}><Blog /></LanguageProvider>} />
+      ))}
+      {['en', 'pt', 'es', 'fr'].map((lang) => (
+        <Route key={`${lang}-blog-post`} path={`/${lang}/blog/:slug`} element={<LanguageProvider lang={lang}><BlogPost /></LanguageProvider>} />
       ))}
 
       {/* Tool routes for each language */}
